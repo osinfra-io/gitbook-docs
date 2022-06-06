@@ -2,9 +2,9 @@
 description: Helping startups startup, and large organizations scale up!
 ---
 
-# Welcome!
+# Documentation
 
-![](.gitbook/assets/windmill.jpg)
+![](.gitbook/assets/windmill.png)
 
 This site is dedicated to implementing a baseline infrastructure as code (IaC) framework using a consolidated convenience, over the best-of-breed approach.  The intent is to speak to as many people as possible by keeping the system simple, efficient, and not too opinionated.&#x20;
 
