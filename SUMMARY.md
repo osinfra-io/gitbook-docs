@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Documentation](README.md)
+* [Welcome!](README.md)
 * [Development Setup](development-setup/README.md)
   * [Tools](development-setup/tools/README.md)
     * [Homebrew](development-setup/tools/homebrew.md)
