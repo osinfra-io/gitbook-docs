@@ -12,13 +12,13 @@ This is optional but will allow for `sudo` access without entering a password.
 
 This script is in the [osinfra-io/local-development-setup](https://github.com/osinfra-io/local-development-setup) repo.
 
-```
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/osinfra-io/local-development-setup/main/ubuntu/setup.sh)"
 ```
 
 Change your default shell to Zsh and exit.
 
-```
+```bash
 chsh -s /home/linuxbrew/.linuxbrew/bin/zsh; exit
 ```
 
@@ -26,6 +26,6 @@ When you start the terminal you will be prompted to set up [Powerlevel10k](https
 
 Once complete you can stay up to date by running the generated update script.
 
-```
+```bash
 ~/bin/update.sh
 ```
