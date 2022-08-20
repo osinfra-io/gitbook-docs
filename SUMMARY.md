@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome!](README.md)
+  * [Norms](readme/norms.md)
 * [Development Setup](development-setup/README.md)
   * [Tools](development-setup/tools/README.md)
     * [Homebrew](development-setup/tools/homebrew.md)
@@ -10,3 +11,6 @@
   * [GitHub Codespaces](development-setup/github-codespaces.md)
   * [Ubuntu](development-setup/ubuntu-setup.md)
   * [Windows (WSL)](development-setup/windows-wsl-setup.md)
+* [Google Cloud Platform](google-cloud-platform/README.md)
+  * [Naming Conventions](google-cloud-platform/naming-conventions.md)
+  * [Organization Setup](google-cloud-platform/organization-setup.md)
