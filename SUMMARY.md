@@ -1,8 +1,8 @@
 # Table of contents
 
 * [Welcome!](README.md)
-  * [Norms](readme/norms/README.md)
-    * [Terraform Coding Standards](readme/norms/terraform-coding-standards.md)
+  * [Norms](welcome/norms/README.md)
+    * [Terraform Coding Standards](welcome/norms/terraform-coding-standards.md)
 * [Development Setup](development-setup/README.md)
   * [Tools](development-setup/tools/README.md)
     * [Homebrew](development-setup/tools/homebrew.md)
