@@ -1,5 +1,7 @@
 # Ubuntu
 
+<figure><img src="../.gitbook/assets/ubuntu-logo.png" alt=""><figcaption></figcaption></figure>
+
 ## Install
 
 To install all the local tools we will need you can run the following commands.
