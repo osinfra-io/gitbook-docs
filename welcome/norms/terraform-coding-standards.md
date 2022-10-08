@@ -7,6 +7,8 @@ description: >-
 
 # Terraform Coding Standards
 
+<figure><img src="../../.gitbook/assets/terraform-logo.png" alt=""><figcaption></figcaption></figure>
+
 ## Style Conventions
 
 > The Terraform parser allows flexibility in laying out the elements in your configuration files. Still, the Terraform language also has some idiomatic style conventions, which we recommend users always follow for consistency between files and modules written by different teams.
