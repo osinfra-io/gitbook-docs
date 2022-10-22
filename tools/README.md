@@ -1,9 +1,5 @@
 # Tools
 
-## Package management
-
-* [Homebrew](homebrew.md): installs the stuff you need that Apple (or your Linux system) didn’t.
-
 ## Cloud Providers
 
 * [AWS command-line interface](cloud-providers.md#aws-cli): (AWS CLI) is a unified tool to manage your AWS services.
