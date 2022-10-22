@@ -10,7 +10,6 @@
   * [Ubuntu](development-setup/ubuntu-setup.md)
   * [Windows (WSL)](development-setup/windows-wsl-setup.md)
 * [Tools](tools/README.md)
-  * [Homebrew](tools/homebrew.md)
   * [Cloud Providers](tools/cloud-providers.md)
   * [Testing](tools/testing.md)
 * [Google Cloud Platform](google-cloud-platform/README.md)
