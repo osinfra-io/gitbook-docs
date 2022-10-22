@@ -73,7 +73,7 @@ Set the font in Windows Terminal settings for the Ubuntu profile:
 
 ![](../.gitbook/assets/windows-terminal-font-meslolgs-nf.png)
 
-### Linux (WSL) Setup
+### <img src="../.gitbook/assets/linux-icon.png" alt="" data-size="line"> Linux (WSL) Setup
 
 With a complete Linux environment on Windows with Windows Subsystem for Linux (WSL). We can access the Linux terminal, develop cross-platform applications, and manage infrastructure without leaving Windows.
 
