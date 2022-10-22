@@ -6,7 +6,7 @@ description: >-
 
 # Windows (WSL)
 
-![windows-11-logo.svg](../.gitbook/assets/windows-11-logo.svg)
+![](../.gitbook/assets/windows-11-logo.svg)
 
 Windows has become an excellent choice for sandbox development with the addition of [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install) (WSL). You can run complete Linux environments directly on Windows. [Visual Studio Code](https://code.visualstudio.com) (VS Code), a code editor of choice for many folks, also supports [Remote WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl). This extension lets you use the Windows Subsystem for Linux as your full-time development environment right from VS Code!
 
@@ -45,18 +45,18 @@ Install Windows Terminal by searching the Microsoft Store for "Windows Terminal"
 * [Windows Terminal](https://www.microsoft.com/store/productId/9N0DX20HK701)
 
 {% hint style="info" %}
-If you'd like to run the Windows Terminal Preview you should use the following download link.
+If you'd like to run the Windows Terminal Preview, you should use the following download link.
 
 * [Windows Terminal Preview](https://www.microsoft.com/store/productId/9N8G5RFZ9XK3)
 {% endhint %}
 
 Set your default profile and default terminal application in the settings:
 
-![windows-terminal-default-profile-terminal.png](../.gitbook/assets/windows-terminal-default-profile-terminal.png)
+![](../.gitbook/assets/windows-terminal-default-profile-terminal.png)
 
 Select your Ubuntu profile and change the starting directory:
 
-![windows-terminal-starting-directory.png](../.gitbook/assets/windows-terminal-starting-directory.png)
+![](../.gitbook/assets/windows-terminal-starting-directory.png)
 
 Later on in the Ubuntu setup, we will install [Powerlevel10k](https://github.com/romkatv/powerlevel10k) a theme for Zsh that emphasizes [speed](https://github.com/romkatv/powerlevel10k#uncompromising-performance), [flexibility](https://github.com/romkatv/powerlevel10k#extremely-customizable), and [out-of-the-box experience](https://github.com/romkatv/powerlevel10k#configuration-wizard).
 
@@ -71,41 +71,23 @@ Installation of the following fonts is recommended:
 
 Set the font in Windows Terminal settings for the Ubuntu profile:
 
-![windows-terminal-font-meslolgs-nf.png](../.gitbook/assets/windows-terminal-font-meslolgs-nf.png)
+![](../.gitbook/assets/windows-terminal-font-meslolgs-nf.png)
 
-### <img src="../.gitbook/assets/ubuntu-icon.png" alt="ubuntu-icon.png" data-size="line">Ubuntu (WSL) Setup
+### Linux (WSL) Setup
 
-With a complete Ubuntu terminal environment on Windows with Windows Subsystem for Linux (WSL). We can access the Linux terminal, develop cross-platform applications, and manage infrastructure without leaving Windows.
+With a complete Linux environment on Windows with Windows Subsystem for Linux (WSL). We can access the Linux terminal, develop cross-platform applications, and manage infrastructure without leaving Windows.
 
-## Tools Install
+#### Tools Install
 
-To install all the local tools we will need you can run the following commands.
+To install all the local tools on Linux, please follow the documentation in one of the following links.
 
-This is optional but will allow for `sudo` access without entering a password.
+{% content-ref url="gentoo.md" %}
+[gentoo.md](gentoo.md)
+{% endcontent-ref %}
 
-```bash
- echo "$USER ALL=(ALL) NOPASSWD:ALL" | sudo EDITOR='tee -a' visudo
-```
-
-This script is in the [osinfra-io/local-development-setup](https://github.com/osinfra-io/local-development-setup) repo.
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/osinfra-io/local-development-setup/main/ubuntu/setup.sh)"
-```
-
-Change your default shell to Zsh and exit.
-
-```bash
-chsh -s /home/linuxbrew/.linuxbrew/bin/zsh; exit
-```
-
-When you start Windows Terminal you will be prompted to set up [Powerlevel10k](https://github.com/romkatv/powerlevel10k). Choose the options you like and go!
-
-Once complete you can stay up to date by running the generated update script.
-
-```bash
-~/bin/update.sh
-```
+{% content-ref url="ubuntu-setup.md" %}
+[ubuntu-setup.md](ubuntu-setup.md)
+{% endcontent-ref %}
 
 ### <img src="../.gitbook/assets/vscode-icon.png" alt="vscode-icon.png" data-size="line"> Visual Studio Code
 
@@ -114,7 +96,7 @@ Install VS Code by searching the Microsoft Store for "Visual Studio Code" or use
 * [Visual Studio Code](https://code.visualstudio.com/download)
 
 {% hint style="info" %}
-If you'd like to run the insider build of Visual Studio Code you should use the following download link.
+If you'd like to run the insider build of Visual Studio Code, you should use the following download link.
 
 * [Visual Studio Code Insiders](https://code.visualstudio.com/insiders)
 {% endhint %}
@@ -128,7 +110,7 @@ You can [browse for extensions](https://code.visualstudio.com/docs/editor/extens
 * The [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension lets you use VS Code on Windows to build Linux applications that run on the WSL. You get all the productivity of Windows while developing with Linux-based tools, runtimes, and utilities.
 
 {% hint style="info" %}
-After installing this extension select the open a remote window icon: ![vs-code-open-remote-window-icon.png](../.gitbook/assets/vs-code-open-remote-window-icon.png) in the bottom left, choose "New WSL Window" and close the old window. You are now running in Ubuntu and you can install the other extensions. You should see "Install in WSL: Ubuntu" now when installing the extensions that prefer to run in Ubuntu.
+After installing this extension select the open a remote window icon: ![vs-code-open-remote-window-icon.png](../.gitbook/assets/vs-code-open-remote-window-icon.png) in the bottom left, choose "New WSL Window" and close the old window. You are now running in Linux, and you can install the other extensions. You should see "Install in WSL: Ubuntu" or "Install in WSL: Gentoo" now when installing the extensions that prefer to run in Linux.
 {% endhint %}
 
 * The [HashiCorp Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform) VS Code extension adds syntax highlighting and other editing features for [Terraform](https://www.terraform.io) files using the [Terraform Language Server](https://github.com/hashicorp/terraform-ls).
@@ -142,4 +124,4 @@ After installing this extension select the open a remote window icon: ![vs-code-
 
 Set terminal font family to work with [Powerleve10k](https://github.com/romkatv/powerlevel10k).
 
-![vscode-terminal-font-settings.png](../.gitbook/assets/vscode-terminal-font-settings.png)
+![](../.gitbook/assets/vscode-terminal-font-settings.png)
