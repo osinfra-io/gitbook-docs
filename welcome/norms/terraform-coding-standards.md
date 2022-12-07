@@ -1,7 +1,7 @@
 ---
 description: >-
   A set of rules, techniques, and best practices for creating a cleaner, more
-  readable, and efficient code base with minimal errors. It helps future
+  readable, and more efficient code base with minimal errors. It helps future
   authors, as well as code reviewers, align.
 ---
 
@@ -27,5 +27,5 @@ A block is a container for other content. Block types should be in the following
 * [Providers](https://www.terraform.io/language/providers): Terraform relies on " providers " plugins to interact with cloud providers, SaaS providers, and other APIs.
 * [Data Sources](https://www.terraform.io/language/data-sources): _Data sources_ allow Terraform to use the information defined outside of Terraform, defined by another separate Terraform configuration, or modified by functions.
 * [Modules](https://www.terraform.io/language/modules): _Modules_ are containers for multiple resources that are used together. A module consists of a collection of `.tf` files in a directory.
-* [Resources](https://www.terraform.io/language/resources): _Resources_ are the most crucial element in the Terraform language. Each resource block describes one or more infrastructure objects, such as virtual networks, compute instances, or higher-level components such as DNS records.
+* [Resources](https://www.terraform.io/language/resources): _Resources_ are the most crucial element in the Terraform language. Each resource block describes one or more infrastructure objects, such as virtual networks, compute instances, or higher-level components, such as DNS records.
 

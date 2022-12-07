@@ -6,7 +6,7 @@ description: >-
 
 # Gentoo
 
-<figure><img src="../.gitbook/assets/Gentoo-Larry.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/gentoo-larry.png" alt=""><figcaption></figcaption></figure>
 
 
 
