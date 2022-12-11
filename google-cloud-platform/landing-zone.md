@@ -1,10 +1,10 @@
 ---
 description: >-
-  This guide helps set up a Google Cloud foundation in order to run scalable,
-  production-ready, enterprise workloads.
+  This guide helps set up a Google Cloud landing zone in order to run scalable,
+  production-ready enterprise workloads.
 ---
 
-# Organization Setup
+# Landing Zone
 
 ## Resource Hierarchy
 

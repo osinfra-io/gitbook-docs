@@ -4,11 +4,11 @@ description: >-
   sandbox development environment.
 ---
 
-# Windows (WSL)
+# Windows (WSL Ubuntu)
 
 ![](../.gitbook/assets/windows-11-logo.svg)
 
-Windows has become an excellent choice for sandbox development with the addition of [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install) (WSL). You can run complete Linux environments directly on Windows. [Visual Studio Code](https://code.visualstudio.com) (VS Code), a code editor of choice for many folks, also supports [Remote WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl). This extension lets you use the Windows Subsystem for Linux as your full-time development environment right from VS Code!
+Windows has become an excellent choice for sandbox development with the addition of [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install) (WSL). You can run complete Linux environments directly on Windows. [Visual Studio Code](https://code.visualstudio.com) (VS Code), a code editor of choice for many folks, also supports [Remote WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl). This extension lets you use the Windows Subsystem for Linux as your full-time development environment right from Visual Studio Code!
 
 The official documentation can be found here:
 
@@ -18,7 +18,7 @@ The official documentation can be found here:
 
 ## Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
-You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11. If you're running an older build, or just prefer not to use the install command and would like step-by-step directions, see [**WSL manual installation steps for older versions**](https://docs.microsoft.com/en-us/windows/wsl/install-manual).
+You must run Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11. If you're running an older build or just prefer not to use the install command and would like step-by-step directions, see [**WSL manual installation steps for older versions**](https://docs.microsoft.com/en-us/windows/wsl/install-manual).
 
 ## Install
 
@@ -87,7 +87,7 @@ To install all the local tools on Ubuntu, please follow the documentation on the
 
 ### <img src="../.gitbook/assets/vscode-icon.png" alt="vscode-icon.png" data-size="line"> Visual Studio Code
 
-Install VS Code by searching the Microsoft Store for "Visual Studio Code" or use the following download link.
+Install Visual Studio Code by searching the Microsoft Store for "Visual Studio Code" or use the following download link.
 
 * [Visual Studio Code](https://code.visualstudio.com/download)
 
@@ -99,22 +99,24 @@ If you'd like to run the insider build of Visual Studio Code, you should use the
 
 #### Install Extensions
 
-VS Code extensions let you add languages and tools to your installation to support your development workflow. To install extensions, open up VS Code and select the extension's icon in the sidebar: ![vs-code-extensions-icon.png](../.gitbook/assets/vs-code-extensions-icon.png)
+VS Code extensions let you add languages and tools to your installation to support your development workflow. To install extensions, open up Visual Studio Code and select the extension's icon in the sidebar: ![vs-code-extensions-icon.png](../.gitbook/assets/vs-code-extensions-icon.png)
 
 You can [browse for extensions](https://code.visualstudio.com/docs/editor/extension-marketplace#\_browse-for-extensions):
 
-* The [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension lets you use VS Code on Windows to build Linux applications that run on the WSL. You get all the productivity of Windows while developing with Linux-based tools, runtimes, and utilities.
+* The [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension lets you use Visual Studio Code on Windows to build Linux applications that run on the WSL. You get all the productivity of Windows while developing with Linux-based tools, runtimes, and utilities.
 
 {% hint style="info" %}
-After installing this extension, select the open a remote window icon: ![vs-code-open-remote-window-icon.png](../.gitbook/assets/vs-code-open-remote-window-icon.png) in the bottom left, choose "New WSL Window" and close the old window. You are now running in Linux, and you can install the other extensions. You should see "Install in WSL: Ubuntu" or "Install in WSL: Gentoo" now when installing the extensions that prefer to run in Linux.
+After installing this extension, select the open a remote window icon: ![vs-code-open-remote-window-icon.png](../.gitbook/assets/vs-code-open-remote-window-icon.png) in the bottom left, choose "New WSL Window" and close the old window. You are now running in Linux, and you can install the other extensions. You should see "Install in WSL: Ubuntu" or now when installing the extensions that prefer to run in Linux.
 {% endhint %}
 
-* The [HashiCorp Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform) VS Code extension adds syntax highlighting and other editing features for [Terraform](https://www.terraform.io) files using the [Terraform Language Server](https://github.com/hashicorp/terraform-ls).
-* The [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension allows you to review and manage GitHub pull requests and issues in VS Code.
+* The [HashiCorp Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform) extension adds syntax highlighting and other editing features for [Terraform](https://www.terraform.io) files using the [Terraform Language Server](https://github.com/hashicorp/terraform-ls).
+* The [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension allows you to review and manage GitHub pull requests and issues in Visual Studio Code.
 * The [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) extension is all you need for Markdown (keyboard shortcuts, table of contents, auto preview, and more).
-* The [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby) extension provides enhanced Ruby language and debugging support for VS Code.
-* The [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) extension provides comprehensive YAML Language support to VS Code, via the [yaml-language-server](https://github.com/redhat-developer/yaml-language-server), with built-in Kubernetes syntax support.
-* The [Checkov](https://marketplace.visualstudio.com/items?itemName=Bridgecrew.checkov) Extension for VS Code enables developers to get real-time scan results, as well as inline fix suggestions as they develop cloud infrastructure.
+* The [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) extension provides markdown linting and style checking for Visual Studio Code.
+* The [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby) extension provides enhanced Ruby language and debugging support for Visual Studio Code.
+* The [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) extension provides comprehensive YAML Language support to Visual Studio Code, via the [yaml-language-server](https://github.com/redhat-developer/yaml-language-server), with built-in Kubernetes syntax support.
+* The [Checkov](https://marketplace.visualstudio.com/items?itemName=Bridgecrew.checkov) extension enables developers to get real-time scan results, as well as inline fix suggestions as they develop cloud infrastructure.
+* The [Infracost](https://marketplace.visualstudio.com/items?itemName=Infracost.infracost) extension shows you cost estimates for Terraform right in your editor! Prevent costly infrastructure changes before they get into production.
 
 #### Settings
 
