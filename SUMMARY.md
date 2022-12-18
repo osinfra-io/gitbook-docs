@@ -2,6 +2,7 @@
 
 * [Welcome!](README.md)
   * [Norms](readme/norms.md)
+  * [Team Topologies](readme/team-topologies.md)
 * [Development Setup](development-setup/README.md)
   * [Docker](development-setup/docker.md)
   * [Gentoo](development-setup/gentoo.md)
@@ -19,6 +20,7 @@
   * [Terraform](tools/terraform/README.md)
     * [Coding Conventions](tools/terraform/terraform-coding-conventions.md)
   * [GitHub](tools/github.md)
+  * [GitBook](tools/gitbook.md)
 * [Google Cloud Platform](google-cloud-platform/README.md)
   * [Naming Conventions](google-cloud-platform/naming-conventions.md)
   * [Landing Zone](google-cloud-platform/landing-zone.md)
