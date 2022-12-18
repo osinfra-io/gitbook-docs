@@ -17,7 +17,7 @@
     * [Bridgecrew](tools/testing/bridgecrew.md)
     * [Gremlin](tools/testing/gremlin.md)
   * [Terraform](tools/terraform/README.md)
-    * [Coding Conventions](tools/terraform/terraform-coding-standards.md)
+    * [Coding Conventions](tools/terraform/terraform-coding-conventions.md)
   * [GitHub](tools/github.md)
 * [Google Cloud Platform](google-cloud-platform/README.md)
   * [Naming Conventions](google-cloud-platform/naming-conventions.md)
