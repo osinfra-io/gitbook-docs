@@ -1,6 +1,6 @@
 ---
 description: >-
-  Restore order to your infrastructure and enables your product teams to ship
+  Restore order to your infrastructure and enable your product teams to ship
   high-quality code quickly — without compromising autonomy.
 ---
 
