@@ -1,8 +1,8 @@
 # Table of contents
 
 * [Welcome!](README.md)
-  * [Team Norms](readme/team-norms.md)
-  * [Team Topologies](readme/team-topologies.md)
+  * [Team Norms](welcome/team-norms.md)
+  * [Team Topologies](welcome/team-topologies.md)
 * [Development Setup](development-setup/README.md)
   * [Docker](development-setup/docker.md)
   * [Gentoo](development-setup/gentoo.md)
