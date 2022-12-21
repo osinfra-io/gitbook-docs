@@ -24,3 +24,5 @@
 * [Google Cloud Platform](google-cloud-platform/README.md)
   * [Naming Conventions](google-cloud-platform/naming-conventions.md)
   * [Landing Zone](google-cloud-platform/landing-zone.md)
+* [GitHub](github/README.md)
+  * [Organization Management](github/organization-management.md)
