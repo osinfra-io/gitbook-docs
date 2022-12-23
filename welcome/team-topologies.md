@@ -6,4 +6,3 @@ description: >-
 
 # Team Topologies
 
-<figure><img src="../.gitbook/assets/team-topologies-logo.png" alt=""><figcaption></figcaption></figure>
