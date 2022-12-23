@@ -20,7 +20,6 @@
     * [Inspec](tools/testing/inspec.md)
     * [Kitchen-Terraform](tools/testing/kitchen-terraform.md)
     * [Bridgecrew](tools/testing/bridgecrew.md)
-    * [Gremlin](tools/testing/gremlin.md)
 * [Google Cloud Platform](google-cloud-platform/README.md)
   * [Naming Conventions](google-cloud-platform/naming-conventions.md)
   * [Landing Zone](google-cloud-platform/landing-zone.md)

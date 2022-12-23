@@ -54,11 +54,7 @@ Set your default profile and default terminal application in the settings:
 
 ![](../.gitbook/assets/windows-terminal-default-profile-terminal.png)
 
-Select your Ubuntu profile and change the starting directory:
-
-![](../.gitbook/assets/windows-terminal-starting-directory.png)
-
-Later on in the Ubuntu setup, we will install [Powerlevel10k](https://github.com/romkatv/powerlevel10k), a theme for Zsh that emphasizes [speed](https://github.com/romkatv/powerlevel10k#uncompromising-performance), [flexibility](https://github.com/romkatv/powerlevel10k#extremely-customizable), and [out-of-the-box experience](https://github.com/romkatv/powerlevel10k#configuration-wizard).
+Later in the Ubuntu setup, we will install [Powerlevel10k](https://github.com/romkatv/powerlevel10k), a theme for Zsh that emphasizes [speed](https://github.com/romkatv/powerlevel10k#uncompromising-performance), [flexibility](https://github.com/romkatv/powerlevel10k#extremely-customizable), and [out-of-the-box experience](https://github.com/romkatv/powerlevel10k#configuration-wizard).
 
 Installation of the following fonts is recommended:
 
@@ -106,7 +102,7 @@ You can [browse for extensions](https://code.visualstudio.com/docs/editor/extens
 * The [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension lets you use Visual Studio Code on Windows to build Linux applications that run on the WSL. You get all the productivity of Windows while developing with Linux-based tools, runtimes, and utilities.
 
 {% hint style="info" %}
-After installing this extension, select the open a remote window icon: ![vs-code-open-remote-window-icon.png](../.gitbook/assets/vs-code-open-remote-window-icon.png) in the bottom left, choose "New WSL Window" and close the old window. You are now running in Linux, and you can install the other extensions. You should see "Install in WSL: Ubuntu" or now when installing the extensions that prefer to run in Linux.
+After installing this extension, select the open a remote window icon: ![vs-code-open-remote-window-icon.png](../.gitbook/assets/vs-code-open-remote-window-icon.png) in the bottom left, choose "New WSL Window" and close the old window. You are now running in Linux and can install the other extensions. You should see "Install in WSL: Ubuntu" or now when installing the extensions that prefer to run in Linux.
 {% endhint %}
 
 * The [HashiCorp Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform) extension adds syntax highlighting and other editing features for [Terraform](https://www.terraform.io) files using the [Terraform Language Server](https://github.com/hashicorp/terraform-ls).
@@ -115,7 +111,7 @@ After installing this extension, select the open a remote window icon: ![vs-code
 * The [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) extension provides markdown linting and style checking for Visual Studio Code.
 * The [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby) extension provides enhanced Ruby language and debugging support for Visual Studio Code.
 * The [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) extension provides comprehensive YAML Language support to Visual Studio Code, via the [yaml-language-server](https://github.com/redhat-developer/yaml-language-server), with built-in Kubernetes syntax support.
-* The [Checkov](https://marketplace.visualstudio.com/items?itemName=Bridgecrew.checkov) extension enables developers to get real-time scan results, as well as inline fix suggestions as they develop cloud infrastructure.
+* The [Checkov](https://marketplace.visualstudio.com/items?itemName=Bridgecrew.checkov) extension enables developers to get real-time scan results and inline fix suggestions as they develop cloud infrastructure.
 * The [Infracost](https://marketplace.visualstudio.com/items?itemName=Infracost.infracost) extension shows you cost estimates for Terraform right in your editor! Prevent costly infrastructure changes before they get into production.
 
 #### Settings
