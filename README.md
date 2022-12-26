@@ -1,5 +1,5 @@
 ---
-description: Open-source Infrastructure (as Code)
+description: Open Source Infrastructure (as Code)
 ---
 
 # Welcome!
