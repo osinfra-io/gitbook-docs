@@ -10,4 +10,4 @@ description: >-
 
 ### Status
 
-Thoughtworks Technology Radar: [Adopt](https://www.thoughtworks.com/radar/platforms/backstage)[ Ring](https://www.thoughtworks.com/radar/platforms/backstage)
+Thoughtworks Technology Radar: [Adopt Ring](https://www.thoughtworks.com/radar/platforms/backstage)
