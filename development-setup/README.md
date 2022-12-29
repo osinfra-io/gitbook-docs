@@ -1,7 +1,7 @@
 ---
 description: >-
-  Local development is key for safe and fast failure, when dealing with cloud
-  providers, we can call this sandboxed development.
+  Local development is critical for safe and fast failure; when dealing with
+  cloud providers, we can call this sandboxed development.
 ---
 
 # Development Setup
