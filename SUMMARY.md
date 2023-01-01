@@ -25,5 +25,6 @@
   * [Naming Conventions](google-cloud-platform/naming-conventions.md)
   * [Landing Zone](google-cloud-platform/landing-zone.md)
 * [GitHub](github/README.md)
+  * [GitHub Flow](github/github-flow.md)
   * [Naming Conventions](github/naming-conventions.md)
   * [Organization Management](github/organization-management.md)
