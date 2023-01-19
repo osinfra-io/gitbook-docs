@@ -2,7 +2,7 @@
 
 ## Tooling
 
-* Find tooling that leads or guides your teams down a given well-defined path vs. tooling that caters to large organizations' "needs," stemming from problems that arise from Conway's law. The latter creates extensive, overly complex tooling that tries to solve everyone's problems. The former leads to a more stable, focused, and intuitive tooling designed to solve a reasonable set of problems.
+* Choose tooling that leads or guides your teams down a given well-defined path vs. tooling that caters to large organizations' "needs," stemming from the accumulative force of Conway's law. The latter creates extensive, overly complex tooling that tries to solve everyone's problems. The former leads to a more stable, focused, and intuitive tooling design to solve a reasonable set of problems.
 
 ## People Development
 
