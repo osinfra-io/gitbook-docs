@@ -1,6 +1,6 @@
 # Ubuntu
 
-<figure><img src="../.gitbook/assets/ubuntu-logo.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/ubuntu-logo.png" alt="" width="270"><figcaption></figcaption></figure>
 
 ## Install
 
