@@ -9,7 +9,7 @@ You can run the following commands to install all the local tools we will need.
 This is optional but will allow for `sudo` access without entering a password.
 
 ```bash
- echo "$USER ALL=(ALL) NOPASSWD:ALL" | sudo EDITOR='tee -a' visudo
+echo "$USER ALL=(ALL) NOPASSWD:ALL" | sudo EDITOR='tee -a' visudo
 ```
 
 This script is in the [osinfra-io/local-development-setup](https://github.com/osinfra-io/local-development-setup) repo.
