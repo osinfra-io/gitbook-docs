@@ -1,6 +1,6 @@
 ---
 description: >-
-  Windows with Windows Subsystem for Linux as your infrastructure as code (IaC)
+  Windows with Windows Subsystem for Linux as your Infrastructure as Code (IaC)
   sandbox development environment.
 ---
 

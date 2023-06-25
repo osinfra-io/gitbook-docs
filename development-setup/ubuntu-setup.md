@@ -1,10 +1,16 @@
+---
+description: >-
+  Use the Ubuntu distribution as an Infrastructure as Code (IaC) sandbox
+  development environment.
+---
+
 # Ubuntu
 
 <figure><img src="../.gitbook/assets/ubuntu-logo.png" alt="" width="270"><figcaption></figcaption></figure>
 
 ## Install
 
-You can run the following commands to install all the local tools we will need.
+You can run the following commands to install all the local tools we need.
 
 This is optional but will allow for `sudo` access without entering a password.
 

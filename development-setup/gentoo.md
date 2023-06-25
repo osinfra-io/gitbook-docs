@@ -1,7 +1,7 @@
 ---
 description: >-
   A highly flexible, source-based Linux distribution. Compile your own
-  infrastructure as code (IaC) sandbox development environment.
+  Infrastructure as Code (IaC) sandbox development environment.
 ---
 
 # Gentoo

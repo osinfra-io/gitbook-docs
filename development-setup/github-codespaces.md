@@ -1,5 +1,7 @@
 ---
-description: A Terraform development environment that's hosted in the cloud.
+description: >-
+  An Infrastructure as Code (IaC) sandbox development environment. that's hosted
+  in the cloud.
 ---
 
 # GitHub Codespaces
