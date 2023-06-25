@@ -77,8 +77,8 @@ With a complete Linux environment on Windows with Windows Subsystem for Linux (W
 
 To install all the local tools on Ubuntu, please follow the documentation on the following page.
 
-{% content-ref url="ubuntu-setup.md" %}
-[ubuntu-setup.md](ubuntu-setup.md)
+{% content-ref url="ubuntu.md" %}
+[ubuntu.md](ubuntu.md)
 {% endcontent-ref %}
 
 ### <img src="../.gitbook/assets/vscode-icon.png" alt="vscode-icon.png" data-size="line"> Visual Studio Code
