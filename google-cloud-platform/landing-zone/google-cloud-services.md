@@ -7,7 +7,7 @@ description: >-
 
 # Google Cloud Services
 
-### CIDR Blocks
+## CIDR Blocks
 
 The following CIDR blocks are available:
 
@@ -26,7 +26,7 @@ The following CIDR blocks are available:
 
 We are breaking up the `10.0.0.0/10` CIDR block with the above calculator using the following inputs:
 
-```
+```json
 {
  "network": "10.0.0.0",
  "netmask": 10,
