@@ -1,5 +1,7 @@
 ---
-description: Infrastructure as Code is foundational to Platform Engineering.
+description: >-
+  Infrastructure as Code is a crucial and indispensable element of Platform
+  Engineering.
 ---
 
 # Key Concepts

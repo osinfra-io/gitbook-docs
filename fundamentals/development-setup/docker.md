@@ -6,7 +6,7 @@ description: >-
 
 # Docker
 
-<figure><img src="../.gitbook/assets/docker-logo.png" alt="" width="201"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docker-logo.png" alt="" width="201"><figcaption></figcaption></figure>
 
 ## Images
 
@@ -44,10 +44,10 @@ docker run -it ghcr.io/osinfra-io/gentoo:latest
 
 Install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension for Visual Studio Code. The extension lets you use a [Docker container](https://docker.com/) as a full-featured development environment.
 
-In Visual Studio Code, you can click the open a remote window icon ![](../.gitbook/assets/vs-code-open-remote-window-icon.png) and select attach to running container.
+In Visual Studio Code, you can click the open a remote window icon ![](../../.gitbook/assets/vs-code-open-remote-window-icon.png) and select attach to running container.
 
-<figure><img src="../.gitbook/assets/vscode-attach-to-running-container.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vscode-attach-to-running-container.png" alt=""><figcaption></figcaption></figure>
 
 Next, select the running container from the previous step.
 
-<figure><img src="../.gitbook/assets/vscode-choose-container.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vscode-choose-container.png" alt=""><figcaption></figcaption></figure>

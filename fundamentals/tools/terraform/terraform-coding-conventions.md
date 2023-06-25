@@ -5,9 +5,9 @@ description: >-
   authors, as well as code reviewers, align.
 ---
 
-# Terraform Coding Standards
+# Coding Conventions
 
-<figure><img src="../../.gitbook/assets/terraform-logo.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/terraform-logo.png" alt=""><figcaption></figcaption></figure>
 
 ## Style Conventions
 

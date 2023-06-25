@@ -6,7 +6,7 @@ description: >-
 
 # Backstage
 
-<figure><img src="../.gitbook/assets/backstage-logo.gif" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/backstage-logo.gif" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Status
 

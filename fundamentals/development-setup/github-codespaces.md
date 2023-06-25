@@ -6,7 +6,7 @@ description: >-
 
 # GitHub Codespaces
 
-<figure><img src="../.gitbook/assets/github-codespaces-logo.png" alt="" width="257"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github-codespaces-logo.png" alt="" width="257"><figcaption></figcaption></figure>
 
 [GitHub Codespaces](https://github.com/features/codespaces) provides cloud-hosted development environments for any activity - whether a long-term project or a short-term task like reviewing a pull request. You can connect to Codespaces from Visual Studio Code or a browser-based editor that's accessible anywhere.
 
@@ -27,5 +27,5 @@ You can [browse for extensions](https://code.visualstudio.com/docs/editor/extens
 
 Go to your GitHub Codespace repository, click on the code dropdown, select Codespaces, and create a new Codspace on main.
 
-<figure><img src="../.gitbook/assets/infrastructure-as-code-codespace.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/infrastructure-as-code-codespace.png" alt=""><figcaption></figcaption></figure>
 

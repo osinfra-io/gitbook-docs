@@ -6,7 +6,7 @@ description: >-
 
 # Gentoo
 
-<figure><img src="../.gitbook/assets/gentoo-larry.png" alt="" width="213"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/gentoo-larry.png" alt="" width="213"><figcaption></figcaption></figure>
 
 ## Install
 
