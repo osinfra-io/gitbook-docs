@@ -20,7 +20,6 @@
     * [Inspec](tools/testing/inspec.md)
     * [Kitchen-Terraform](tools/testing/kitchen-terraform.md)
 * [Google Cloud Platform](google-cloud-platform/README.md)
-  * [Naming Conventions](google-cloud-platform/naming-conventions.md)
   * [Landing Zone](google-cloud-platform/landing-zone/README.md)
     * [Google Cloud Services](google-cloud-platform/landing-zone/google-cloud-services.md)
 * [GitHub](github/README.md)

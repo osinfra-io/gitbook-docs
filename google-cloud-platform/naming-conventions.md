@@ -1,4 +1,0 @@
-# Naming Conventions
-
-## Project Names
-
