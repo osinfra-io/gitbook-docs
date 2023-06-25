@@ -37,6 +37,4 @@
   * [Landing Zone](product-guides/google-cloud-platform/landing-zone/README.md)
     * [Google Cloud Services](product-guides/google-cloud-platform/landing-zone/google-cloud-services.md)
 * [💻 GitHub](product-guides/github/README.md)
-  * [GitHub Flow](product-guides/github/github-flow.md)
-  * [Naming Conventions](product-guides/github/naming-conventions.md)
   * [Organization Management](product-guides/github/organization-management.md)
