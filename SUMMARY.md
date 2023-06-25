@@ -3,6 +3,7 @@
 * [Welcome!](README.md)
   * [Key Concepts](welcome/key-concepts.md)
   * [Team Norms](welcome/team-norms.md)
+  * [Language](readme/language.md)
 * [Development Setup](development-setup/README.md)
   * [Docker](development-setup/docker.md)
   * [Gentoo](development-setup/gentoo.md)

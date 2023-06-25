@@ -1,4 +1,10 @@
+---
+description: Infrastructure as Code is foundational to Platform Engineering.
+---
+
 # Key Concepts
+
+Suppose the underlying or lower layer processes are not well-defined. In that case, the upper layers will be unstable and unable to provide the firm foundation needed.
 
 ## Tooling
 
