@@ -10,6 +10,8 @@ description: >-
 
 * [Add or update Terraform backend](https://github.com/osinfra-io/google-cloud-terraform-backend/issues/new?assignees=\&labels=enhancement%2Cgood+first+issue\&template=add-update-backend.yml\&title=Add+or+update+Terraform+backend)
 * [Add or update Kubernetes networking resources](https://github.com/osinfra-io/google-cloud-services/issues/new?assignees=\&labels=enhancement%2Cgood+first+issue\&projects=\&template=add-update-k8s-networking-resources.yml\&title=%F0%9F%94%A9+Add+or+update+Kubernetes+networking+resources)
+* [Add or update identity group](https://github.com/osinfra-io/google-cloud-hierarchy/issues/new?assignees=\&labels=enhancement\&template=add-update-identity-group.yml\&title=Add+or+update+identity+group)
+* [Add or update folder](https://github.com/osinfra-io/google-cloud-hierarchy/issues/new?assignees=\&labels=enhancement\&template=add-update-folder.yml\&title=Add+or+update+folder)
 
 ## Response Times 🕙
 
