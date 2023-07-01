@@ -1,7 +1,7 @@
 ---
 description: >-
-  Infrastructure as Code is a crucial and indispensable element of Platform
-  Engineering.
+  Our focus is on the core fundamental practice of platform engineering,
+  Infrastructure as Code.
 ---
 
 # Key Concepts
