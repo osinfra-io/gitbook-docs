@@ -19,6 +19,7 @@
   * [GitBook](fundamentals/tools/gitbook.md)
   * [GitHub](fundamentals/tools/github.md)
   * [Terraform](fundamentals/tools/terraform/README.md)
+    * [Child Modules](fundamentals/tools/terraform/child-modules.md)
     * [Coding Conventions](fundamentals/tools/terraform/terraform-coding-conventions.md)
   * [Testing](fundamentals/tools/testing/README.md)
     * [Infracost](fundamentals/tools/testing/infracost.md)
