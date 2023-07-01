@@ -6,6 +6,8 @@ description: Open Source Infrastructure (as Code)
 
 ![](.gitbook/assets/osinfra-logo)
 
+### Our focus is on the core fundamental practice of platform engineering, Infrastructure as Code.
+
 Open Source Infrastructure (as code) is a development model for infrastructure that focuses on open collaboration applying relative lessons learned from software development practices that organizations can use internally at scale.
 
 **Infrastructure** is the set of systems and underlying resources that serve an organization and encompasses the services necessary for its teams and applications to function.
