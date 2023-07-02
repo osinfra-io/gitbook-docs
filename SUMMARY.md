@@ -29,13 +29,14 @@
 
 ## Use Cases
 
+* [👋 For Contributors](use-cases/for-contributors.md)
 * [⚙ For Platform Engineers](use-cases/for-platform-engineers.md)
 * [🖥 For Developers](use-cases/for-developers.md)
 
 ## Product Guides
 
 * [☁ Google Cloud Platform](product-guides/google-cloud-platform/README.md)
-  * [Landing Zone](product-guides/google-cloud-platform/landing-zone/README.md)
+  * [🛬 Landing Zone](product-guides/google-cloud-platform/landing-zone/README.md)
     * [Workload Identity](product-guides/google-cloud-platform/landing-zone/google-cloud-workload-identity.md)
     * [Terraform Backend](product-guides/google-cloud-platform/landing-zone/google-cloud-terraform-backend.md)
     * [Kitchen-Terraform Testing Resources](product-guides/google-cloud-platform/landing-zone/google-cloud-kitchen-terraform.md)

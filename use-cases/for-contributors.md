@@ -1,4 +1,4 @@
-# ⚙ For Platform Engineers
+# 👋 For Contributors
 
 ## Get Started
 
