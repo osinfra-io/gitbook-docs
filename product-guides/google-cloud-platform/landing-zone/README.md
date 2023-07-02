@@ -74,7 +74,7 @@ This repository manages a project for [Kitchen-Terraform](https://newcontext-oss
 #### Repository: [google-cloud-shared-resources](https://github.com/osinfra-io/google-cloud-shared-resources)
 
 {% hint style="info" %}
-This repository manages resources like VPC, subnet, DNS, Kubernetes, and other common resources that can be shared across an organization.
+This repository manages resources like VPC, subnet, DNS, NAT, and other common resources that can be shared across an organization.
 {% endhint %}
 
 ### Terraform Backend
