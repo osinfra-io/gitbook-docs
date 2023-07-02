@@ -115,6 +115,7 @@ After installing this extension, select the open a remote window icon: ![vs-code
 * The [Infracost](https://marketplace.visualstudio.com/items?itemName=Infracost.infracost) extension shows you cost estimates for Terraform right in your editor! Prevent costly infrastructure changes before they get into production.
 * The extension for developers building applications to run in [Kubernetes ](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)clusters and for DevOps staff troubleshooting Kubernetes applications.
 * The [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) extension provides markdown linting and style checking for Visual Studio Code.
+* [Open Policy Agent](https://marketplace.visualstudio.com/items?itemName=tsandall.opa) extension provides the ability to develop, test, debug, and analyze policies for the Open Policy Agent project.
 * The [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby) extension provides enhanced Ruby language and debugging support for Visual Studio Code.
 * The [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) extension provides comprehensive YAML Language support to Visual Studio Code, via the [yaml-language-server](https://github.com/redhat-developer/yaml-language-server), with built-in Kubernetes syntax support.
 
