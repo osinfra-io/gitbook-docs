@@ -4,7 +4,7 @@ description: >-
   production-ready enterprise workloads.
 ---
 
-# Landing Zone
+# 🛬 Landing Zone
 
 ## Service Interfaces 🔩
 
@@ -27,39 +27,27 @@ description: >-
 
 ## Communication Channels 🗨️
 
-### **To report a possible incident**
-
+{% tabs %}
+{% tab title="Possible incident" %}
 Contact exclusively via:
 
 * Discord: [Platform - Google Cloud Landing Zone](https://discord.gg/YPg4AmMDvF)
 * Phone number:
+{% endtab %}
 
-### **To ask for support or provide feedback**
-
+{% tab title="Support or provide feedback" %}
 Contact via any of these:
 
 * Discord: [Platform - Google Cloud Landing Zone](https://discord.gg/YPg4AmMDvF)
 * Email address: [platform-google-cloud-landing-zone@osinfra.io](mailto:platform-google-cloud-landing-zone@osinfra.io)
 * Phone number:
-* Office hours (EST): `Weekdays 5:00 PM - 10:00 PM` `Weekends 8:00 AM - 5:00 PM`
+* Office hours (EST): `Weekdays 5:00PM - 10:00PM` `Weekends 8:00AM - 5:00PM`
+{% endtab %}
+{% endtabs %}
 
-## Platform Dependencies 🏗️&#x20;
+## Platform Dependencies 🏗️
 
-### Audit Logging
-
-#### Repository:  [google-cloud-audit-logging](https://github.com/osinfra-io/google-cloud-audit-logging)
-
-{% hint style="info" %}
-This repository manages centralized audit logging resources. Google Cloud services write audit logs that record administrative activities and access within your Google Cloud resources. [Audit logs](https://cloud.google.com/logging/docs/audit) help you answer "who did what, where, and when?" within your Google Cloud organization.
-{% endhint %}
-
-### Resource Hierarchy and IAM
-
-#### Repository: [google-cloud-hierarchy](https://github.com/osinfra-io/google-cloud-hierarchy)
-
-{% hint style="info" %}
-This repository manages a resource hierarchy and IAM. Metaphorically speaking, the [Google Cloud resource hierarchy](https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy) resembles the file system found in traditional operating systems to organize and manage entities hierarchically. [Identity and Access Management (IAM)](https://cloud.google.com/iam) lets administrators authorize who can take action on specific resources, giving you complete control and visibility to manage Google Cloud resources centrally.
-{% endhint %}
+<table data-card-size="large" data-view="cards" data-full-width="true"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Audit Logging:</td><td>This repository manages centralized audit logging resources. Google Cloud services write audit logs that record administrative activities and access within your Google Cloud resources. <a href="https://cloud.google.com/logging/docs/audit">Audit logs</a> help you answer "who did what, where, and when?" within your Google Cloud organization.</td><td><a href="../../../.gitbook/assets/audit-logging.png">audit-logging.png</a></td><td><a href="https://github.com/osinfra-io/google-cloud-audit-logging">https://github.com/osinfra-io/google-cloud-audit-logging</a></td></tr><tr><td>Resource Hierarchy and IAM:</td><td>This repository manages a resource hierarchy and IAM. Metaphorically speaking, the <a href="https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy">Google Cloud resource hierarchy</a> resembles the file system found in traditional operating systems to organize and manage entities hierarchically. <a href="https://cloud.google.com/iam">Identity and Access Management (IAM)</a> lets administrators authorize who can take action on specific resources, giving you complete control and visibility to manage Google Cloud resources centrally.</td><td><a href="../../../.gitbook/assets/resource-hierarchy-iam.png">resource-hierarchy-iam.png</a></td><td></td></tr></tbody></table>
 
 ### Kitchen-Terraform Testing Resources
 
