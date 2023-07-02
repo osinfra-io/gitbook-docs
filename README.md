@@ -2,7 +2,7 @@
 description: Open Source Infrastructure (as Code)
 ---
 
-# 📌 Welcome!
+# 👋 Welcome!
 
 ![](.gitbook/assets/osinfra-logo)
 
