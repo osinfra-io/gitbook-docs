@@ -1,10 +1,12 @@
 ---
 description: >-
-  Examples for setting up a Google Cloud landing zone platform to run scalable,
-  production-ready enterprise workloads.
+  Google Cloud landing zone platform to run scalable, production-ready
+  enterprise workloads.
 ---
 
 # Landing Zone
+
+A modular and scalable configuration that enables organizations to adopt Google Cloud for their business needs. A [landing zone](https://cloud.google.com/architecture/landing-zones) is a prerequisite to deploying enterprise workloads in a cloud environment.
 
 ## Service Interfaces 🔩
 
