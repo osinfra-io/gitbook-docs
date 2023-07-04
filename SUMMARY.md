@@ -35,6 +35,7 @@
 ## Product Guides
 
 * [☁ Google Cloud Platform](product-guides/google-cloud-platform/README.md)
+  * [Kubernetes](product-guides/google-cloud-platform/kubernetes.md)
   * [Landing Zone](product-guides/google-cloud-platform/landing-zone/README.md)
     * [Workload Identity](product-guides/google-cloud-platform/landing-zone/google-cloud-workload-identity.md)
     * [Terraform Backend](product-guides/google-cloud-platform/landing-zone/google-cloud-terraform-backend.md)
