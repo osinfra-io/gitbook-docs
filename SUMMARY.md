@@ -41,7 +41,7 @@
     * [Kitchen-Terraform Testing Resources](product-guides/google-cloud-platform/landing-zone/google-cloud-kitchen-terraform.md)
     * [Resource Hierarchy and IAM](product-guides/google-cloud-platform/landing-zone/google-cloud-hierarchy.md)
     * [Audit Logging](product-guides/google-cloud-platform/landing-zone/google-cloud-audit-logging.md)
-    * [Networking](product-guides/google-cloud-platform/landing-zone/networking.md)
+    * [Networking](product-guides/google-cloud-platform/landing-zone/google-cloud-networking.md)
 * [💻 GitHub](product-guides/github/README.md)
   * [Continuous Delivery Enablement](product-guides/github/continuous-delivery-enablement.md)
   * [Organization Management](product-guides/github/organization-management.md)
