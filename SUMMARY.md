@@ -2,7 +2,7 @@
 
 ## Overview
 
-* [📌 Welcome!](README.md)
+* [⚙ Welcome!](README.md)
   * [Key Concepts](overview/readme/key-concepts.md)
   * [Team Norms](overview/readme/team-norms.md)
   * [Language](overview/readme/language.md)
@@ -29,9 +29,9 @@
 
 ## Use Cases
 
-* [👋 Contributors](use-cases/contributors.md)
-* [⚙ Platform Engineers](use-cases/platform-engineers.md)
-* [🖥 Software Engineers](use-cases/software-engineers.md)
+* [🪛 Contributors](use-cases/contributors.md)
+* [🔨 Platform Engineers](use-cases/platform-engineers.md)
+* [🔧 Software Engineers](use-cases/software-engineers.md)
 
 ## Product Guides
 
