@@ -6,7 +6,7 @@ description: >-
 
 # Ubuntu
 
-<figure><img src="../../.gitbook/assets/ubuntu-logo.png" alt="" width="270"><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt="" width="270"><figcaption></figcaption></figure>
 
 ## Install
 
