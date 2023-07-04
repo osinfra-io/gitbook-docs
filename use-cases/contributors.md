@@ -1,4 +1,4 @@
-# 👋 For Contributors
+# 🪛 Contributors
 
 ## Get Started
 
