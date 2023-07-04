@@ -6,7 +6,7 @@ description: >-
 
 # Windows (WSL Ubuntu)
 
-![](../../.gitbook/assets/windows-11-logo.svg)
+![](../../.gitbook/assets/windows-11.png)
 
 Windows has become an excellent choice for sandbox development with the addition of [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install) (WSL). You can run complete Linux environments directly on Windows. [Visual Studio Code](https://code.visualstudio.com) (VS Code), a code editor of choice for many folks, also supports [Remote WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl). This extension lets you use the Windows Subsystem for Linux as your full-time development environment from Visual Studio Code!
 

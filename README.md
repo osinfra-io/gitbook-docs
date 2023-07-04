@@ -6,7 +6,7 @@ description: >-
 
 # ⚙ Welcome!
 
-![](.gitbook/assets/osinfra-logo)
+![](.gitbook/assets/osinfra)
 
 {% hint style="success" %}
 This is a working example of a documentation site for platform engineering and Infrastructure as Code using [GitBook ](https://www.gitbook.com/)that can be [forked ](https://github.com/osinfra-io/gitbook-docs/fork)and modified to fit your organization's needs. [Continuous improvement](https://continuousdelivery.com/principles/#relentlessly-pursue-continuous-improvement) of documentation is crucial, and we've found that keeping documentation as close to the developer as possible, usually in your [source control system](https://github.com/osinfra-io/gitbook-docs), is required to enable that.

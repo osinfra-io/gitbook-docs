@@ -1,13 +1,13 @@
 ---
 description: >-
-  A common resource layer that aligns with our Google Cloud landing zone
+  A common network resource layer that aligns with our Google Cloud landing zone
   platform design. A landing zone should be a prerequisite to deploying
   enterprise workloads in a cloud environment.
 ---
 
-# Shared Resources
+# Networking
 
-This layer provides common resources like VPCs, VPNs, DNS, NATs, and more to platform teams.  It's a lower-level layer and, in most cases, isn't geared toward stream-aligned teams. Terraform manages it and provides a consistent experience for developers to consume common resources.
+This layer provides common networking resources like VPCs, VPNs, DNS, NATs, and more to platform teams.  It's a lower-level layer and, in most cases, isn't geared toward stream-aligned teams. Terraform manages it and provides a consistent experience for developers to consume common resources.
 
 Providing several common services across an organization is key to enabling fast flow and removing low-level tasks for teams. Things like VPCs, VPNs, DNS, and NATs can take up a lot of development time when the cloud resources they want to use require them.
 

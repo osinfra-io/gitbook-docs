@@ -7,7 +7,7 @@ description: >-
 
 # Coding Conventions
 
-<figure><img src="../../../.gitbook/assets/terraform-logo.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/terraform.png" alt=""><figcaption></figcaption></figure>
 
 ## Style Conventions
 
@@ -28,4 +28,3 @@ A block is a container for other content. Block types should be in the following
 * [Data Sources](https://www.terraform.io/language/data-sources): _Data sources_ allow Terraform to use the information defined outside of Terraform, defined by another separate Terraform configuration, or modified by functions.
 * [Modules](https://www.terraform.io/language/modules): _Modules_ are containers for multiple resources that are used together. A module consists of a collection of `.tf` files in a directory.
 * [Resources](https://www.terraform.io/language/resources): _Resources_ are the most crucial element in the Terraform language. Each resource block describes one or more infrastructure objects, such as virtual networks, compute instances, or higher-level components, such as DNS records.
-
