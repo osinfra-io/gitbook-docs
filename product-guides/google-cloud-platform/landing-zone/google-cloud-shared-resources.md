@@ -1,11 +1,15 @@
 ---
 description: >-
-  A common services layer that aligns with our Google Cloud landing zone
+  A common resource layer that aligns with our Google Cloud landing zone
   platform design. A landing zone should be a prerequisite to deploying
   enterprise workloads in a cloud environment.
 ---
 
-# Google Cloud Services
+# Shared Resources
+
+This layer provides common resources like VPCs, VPNs, DNS, NATs, and more to platform teams.  It's a lower-level layer and, in most cases, isn't geared toward stream-aligned teams. Terraform manages it and provides a consistent experience for developers to consume common resources.
+
+Providing several common services across an organization is key to enabling fast flow and removing low-level tasks for teams. Things like VPCs, VPNs, DNS, and NATs can take up a lot of development time when the cloud resources they want to use require them.
 
 ## CIDR Blocks
 
@@ -44,9 +48,9 @@ We are breaking up the `10.0.0.0/10` CIDR block with the above calculator using 
 
 _NOTES: A Kubernetes_ [_VPC-native cluster_](https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips) _uses_ [_secondary ranges_](https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips#cluster\_sizing\_secondary\_range\_pods) _for Pods & Services._
 
-**The maximum number of Pods and Services for a given GKE cluster is determined by the size of the cluster's secondary ranges. The maximum number of nodes in the cluster is limited by the size of the cluster's subnet's primary IP address range and the cluster's Pod address range.**
+**The size of the cluster's secondary ranges determines the maximum number of Pods and Services for a given GKE cluster. The maximum number of nodes in the cluster is limited by the size of the cluster's subnet's primary IP address range and the cluster's Pod address range.**
 
-This will give us 15 clusters, and each cluster will support:
+This will give us 15 clusters, and each cluster will support the following:
 
 * Up to 1023 node(s) per cluster.
 * Up to 4096 service(s) per cluster.

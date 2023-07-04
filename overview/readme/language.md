@@ -4,5 +4,5 @@ description: >-
   developers.
 ---
 
-# 📓 Language
+# Language
 

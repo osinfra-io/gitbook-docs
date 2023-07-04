@@ -1,9 +1,3 @@
----
-description: >-
-  Our focus is on the core fundamental practice of platform engineering,
-  Infrastructure as Code.
----
-
 # Key Concepts
 
 Suppose the underlying or lower layer processes are not well-defined. In that case, the upper layers will be unstable and unable to provide the firm foundation needed.

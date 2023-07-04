@@ -5,6 +5,7 @@
 * [📌 Welcome!](README.md)
   * [Key Concepts](overview/readme/key-concepts.md)
   * [Team Norms](overview/readme/team-norms.md)
+  * [Language](overview/readme/language.md)
 
 ## Fundamentals
 
@@ -25,13 +26,12 @@
     * [Infracost](fundamentals/tools/testing/infracost.md)
     * [Inspec](fundamentals/tools/testing/inspec.md)
     * [Kitchen-Terraform](fundamentals/tools/testing/kitchen-terraform.md)
-* [📓 Language](fundamentals/language.md)
 
 ## Use Cases
 
-* [👋 For Contributors](use-cases/for-contributors.md)
-* [⚙ For Platform Engineers](use-cases/for-platform-engineers.md)
-* [🖥 For Developers](use-cases/for-developers.md)
+* [👋 Contributors](use-cases/contributors.md)
+* [⚙ Platform Engineers](use-cases/platform-engineers.md)
+* [🖥 Software Engineers](use-cases/software-engineers.md)
 
 ## Product Guides
 
