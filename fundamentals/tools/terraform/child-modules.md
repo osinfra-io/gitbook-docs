@@ -11,13 +11,10 @@ description: >-
 > Child modules can be called multiple times within the same configuration, and multiple configurations can use the same child module.
 
 {% hint style="warning" %}
-_We do not recommend consuming these child modules like you might a_ [_public module_](https://registry.terraform.io/browse/modules)_. Their purpose is to be a baseline, something you can fork and potentially maintain on your own and modify to fit your organization's needs. Using public modules vs. writing your own have various_ [_drivers and trade-offs_](https://github.com/orgs/osinfra-io/discussions/3) _that your organization should evaluate._
+_We do not recommend consuming these child modules like you might a_ [_public module_](https://registry.terraform.io/browse/modules)_. Their purpose is to be a baseline, something you can fork and potentially maintain on your own and modify to fit your organization's needs. Using public modules vs. writing your own has various drivers and trade-offs your organization should evaluate._
 {% endhint %}
 
-* [terraform-google-cloud-dns](https://github.com/osinfra-io/terraform-google-cloud-dns)
-* [terraform-google-cloud-nat](https://github.com/osinfra-io/terraform-google-cloud-nat)
-* [terraform-google-project](https://github.com/osinfra-io/terraform-google-project)
-* [terraform-google-storage-bucket](https://github.com/osinfra-io/terraform-google-storage-bucket)
-* [terraform-google-subnet](https://github.com/osinfra-io/terraform-google-subnet)
-* [terraform-google-vpc](https://github.com/osinfra-io/terraform-google-vpc)
+## Catalog
+
+<table data-view="cards"><thead><tr><th align="center"></th><th data-type="rating" data-max="5"></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center">Google Cloud DNS</td><td>null</td><td><a href="https://github.com/osinfra-io/terraform-google-cloud-dns">https://github.com/osinfra-io/terraform-google-cloud-dns</a></td><td><a href="../../../.gitbook/assets/cloud-dns-card.png">cloud-dns-card.png</a></td></tr><tr><td align="center">Google Cloud NAT</td><td>null</td><td><a href="https://github.com/osinfra-io/terraform-google-cloud-nat">https://github.com/osinfra-io/terraform-google-cloud-nat</a></td><td><a href="../../../.gitbook/assets/cloud-nat-card.png">cloud-nat-card.png</a></td></tr><tr><td align="center">Google Project</td><td>null</td><td><a href="https://github.com/osinfra-io/terraform-google-project">https://github.com/osinfra-io/terraform-google-project</a></td><td><a href="../../../.gitbook/assets/project-card.png">project-card.png</a></td></tr><tr><td align="center">Google Storage Bucket</td><td>null</td><td><a href="https://github.com/osinfra-io/terraform-google-storage-bucket">https://github.com/osinfra-io/terraform-google-storage-bucket</a></td><td><a href="../../../.gitbook/assets/cloud-storage-card (1).png">cloud-storage-card (1).png</a></td></tr><tr><td align="center">Google Subnet</td><td>null</td><td><a href="https://github.com/osinfra-io/terraform-google-subnet">https://github.com/osinfra-io/terraform-google-subnet</a></td><td><a href="../../../.gitbook/assets/subnet-card.png">subnet-card.png</a></td></tr><tr><td align="center">Google VPC</td><td>null</td><td><a href="https://github.com/osinfra-io/terraform-google-vpc">https://github.com/osinfra-io/terraform-google-vpc</a></td><td><a href="../../../.gitbook/assets/virtual-private-cloud-card.png">virtual-private-cloud-card.png</a></td></tr></tbody></table>
 
