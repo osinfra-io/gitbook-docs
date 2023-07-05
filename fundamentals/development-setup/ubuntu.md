@@ -6,7 +6,7 @@ description: >-
 
 # Ubuntu
 
-<figure><img src="../../.gitbook/assets/ubuntu.png" alt="" width="270"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ubuntu.png" alt=""><figcaption></figcaption></figure>
 
 ## Install
 

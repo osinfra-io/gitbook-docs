@@ -6,7 +6,7 @@ description: >-
 
 # Docker
 
-<figure><img src="../../.gitbook/assets/docker.png" alt="" width="201"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docker-card.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Images
 
