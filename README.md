@@ -1,7 +1,7 @@
 ---
 description: >-
-  Our focus is on the core fundamental practice of platform engineering,
-  Infrastructure as Code.
+  We focus on the core fundamental practice of cloud engineering, Infrastructure
+  as Code.
 ---
 
 # ⚙ Welcome!
