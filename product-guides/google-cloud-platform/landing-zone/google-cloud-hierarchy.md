@@ -7,4 +7,12 @@ description: >-
 
 # Resource Hierarchy and IAM
 
-<figure><img src="../../../.gitbook/assets/google-cloud-resource-hierarchy.svg" alt="" width="563"><figcaption></figcaption></figure>
+
+
+<details>
+
+<summary>Resource Hierarchy Diagram</summary>
+
+<img src="../../../.gitbook/assets/google-cloud-resource-hierarchy.svg" alt="" data-size="original">
+
+</details>
