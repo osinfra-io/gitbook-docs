@@ -9,10 +9,4 @@ description: >-
 
 
 
-<details>
-
-<summary>Resource Hierarchy Diagram</summary>
-
-<img src="../../../.gitbook/assets/google-cloud-resource-hierarchy.svg" alt="" data-size="original">
-
-</details>
+<figure><img src="../../../.gitbook/assets/google-cloud-resource-hierarchy.svg" alt="" width="375"><figcaption></figcaption></figure>
