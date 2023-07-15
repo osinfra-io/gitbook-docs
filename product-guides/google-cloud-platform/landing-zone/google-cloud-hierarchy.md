@@ -9,4 +9,4 @@ description: >-
 
 
 
-<figure><img src="../../../.gitbook/assets/google-cloud-resource-hierarchy.svg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/google-cloud-resource-hierarchy.svg" alt="" width="188"><figcaption></figcaption></figure>
