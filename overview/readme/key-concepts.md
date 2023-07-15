@@ -1,6 +1,10 @@
+---
+description: Reduces the cognitive load of teams and improve their capacity.
+---
+
 # Key Concepts
 
-Suppose the underlying or lower layer processes are not well-defined. In that case, the upper layers will be unstable and unable to provide the firm foundation needed.
+Suppose the underlying or lower layer processes are not well-defined. In that case, the upper layers will be unstable and unable to provide the firm foundation needed. Open Source Infrastructure (as Code) aims to lessen the [chaotic approach](https://youtu.be/j5M16qooAvo?t=87) of traditional large organizations' cloud engineering practices by delivering a compelling, supportable foundation that makes it easy for teams to do the right thing. Over time, it ultimately reduces the cognitive load of teams that would otherwise be far beyond their capacity.
 
 ## Tooling
 
