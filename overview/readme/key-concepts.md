@@ -1,5 +1,5 @@
 ---
-description: Reduces the cognitive load of teams and improve their capacity.
+description: Reduce the cognitive load of teams and improve their capacity.
 ---
 
 # Key Concepts
