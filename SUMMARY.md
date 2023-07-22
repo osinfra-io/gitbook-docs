@@ -11,7 +11,8 @@
 
 * [🛠 Architecture Decision Records](fundamentals/architecture-decision-records/README.md)
   * [ADR-0001](fundamentals/architecture-decision-records/adr-0001.md)
-  * [ADR-0002](fundamentals/architecture-decision-records/adr-0002.md)
+  * [ADR-0002](fundamentals/architecture-decision-records/adr-0001-1.md)
+  * [ADR-0003](fundamentals/architecture-decision-records/adr-0003.md)
 * [🔩 Development Setup](fundamentals/development-setup/README.md)
   * [Docker](fundamentals/development-setup/docker.md)
   * [Gentoo](fundamentals/development-setup/gentoo.md)

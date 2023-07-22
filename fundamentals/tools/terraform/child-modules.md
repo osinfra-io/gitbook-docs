@@ -11,7 +11,7 @@ description: >-
 > Child modules can be called multiple times within the same configuration, and multiple configurations can use the same child module.
 
 {% hint style="warning" %}
-_We do not recommend consuming these child modules like you might a_ [_public module_](https://registry.terraform.io/browse/modules)_. Their purpose is to be a baseline, something you can fork, potentially maintain, and modify to fit your organization's needs. Using public modules vs. writing your own has various_ [_drivers and trade-offs_](../../architecture-decision-records/adr-0002.md) _your organization should evaluate._
+_We do not recommend consuming these child modules like you might a_ [_public module_](https://registry.terraform.io/browse/modules)_. Their purpose is to be a baseline, something you can fork, potentially maintain, and modify to fit your organization's needs. Using public modules vs. writing your own has various_ [_drivers and trade-offs_](../../architecture-decision-records/adr-0003.md) _your organization should evaluate._
 {% endhint %}
 
 ## Catalog
