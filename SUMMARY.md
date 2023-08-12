@@ -49,5 +49,6 @@
     * [Audit Logging](product-guides/google-cloud-platform/landing-zone/google-cloud-audit-logging.md)
     * [Networking](product-guides/google-cloud-platform/landing-zone/google-cloud-networking.md)
 * [💻 GitHub](product-guides/github/README.md)
+  * [Naming Conventions](product-guides/github/naming-conventions.md)
   * [Continuous Delivery Enablement](product-guides/github/continuous-delivery-enablement.md)
   * [Organization Management](product-guides/github/organization-management.md)
