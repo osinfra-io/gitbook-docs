@@ -6,6 +6,6 @@
 [landing-zone](landing-zone/)
 {% endcontent-ref %}
 
-{% content-ref url="kubernetes.md" %}
-[kubernetes.md](kubernetes.md)
+{% content-ref url="kubernetes/" %}
+[kubernetes](kubernetes/)
 {% endcontent-ref %}

@@ -21,6 +21,8 @@
   * [Ubuntu](fundamentals/development-setup/ubuntu.md)
   * [Windows (WSL Ubuntu)](fundamentals/development-setup/windows-wsl.md)
 * [⚒ Tools](fundamentals/tools/README.md)
+  * [Backstage](fundamentals/tools/backstage.md)
+  * [Datadog](fundamentals/tools/datadog.md)
   * [GitBook](fundamentals/tools/gitbook.md)
   * [GitHub](fundamentals/tools/github.md)
   * [Terraform](fundamentals/tools/terraform/README.md)
@@ -39,8 +41,11 @@
 
 ## Product Guides
 
+* [🧑💻 Backstage](product-guides/backstage.md)
 * [☁ Google Cloud Platform](product-guides/google-cloud-platform/README.md)
-  * [Kubernetes](product-guides/google-cloud-platform/kubernetes.md)
+  * [Kubernetes](product-guides/google-cloud-platform/kubernetes/README.md)
+    * [Istio](product-guides/google-cloud-platform/kubernetes/istio.md)
+    * [cert-manager](product-guides/google-cloud-platform/kubernetes/cert-manager.md)
   * [Landing Zone](product-guides/google-cloud-platform/landing-zone/README.md)
     * [Workload Identity](product-guides/google-cloud-platform/landing-zone/google-cloud-workload-identity.md)
     * [Terraform Backend](product-guides/google-cloud-platform/landing-zone/google-cloud-terraform-backend.md)
@@ -49,6 +54,6 @@
     * [Audit Logging](product-guides/google-cloud-platform/landing-zone/google-cloud-audit-logging.md)
     * [Networking](product-guides/google-cloud-platform/landing-zone/google-cloud-networking.md)
 * [💻 GitHub](product-guides/github/README.md)
-  * [Naming Conventions](product-guides/github/naming-conventions.md)
   * [Continuous Delivery Enablement](product-guides/github/continuous-delivery-enablement.md)
   * [Organization Management](product-guides/github/organization-management.md)
+* [📊 Datadog](product-guides/datadog.md)
