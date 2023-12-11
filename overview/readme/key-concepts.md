@@ -8,13 +8,13 @@ Suppose the underlying or lower layer processes are not well-defined. In that ca
 
 ## Tooling
 
-* Choose tooling that leads or guides your teams down a given well-defined path vs. tooling that caters to large organizations' "needs," stemming from the accumulative force of Conway's law. The latter creates extensive, overly complex tooling that tries to solve everyone's problems. The former leads to a more stable, focused, and intuitive tooling design to solve a reasonable set of issues.
+* Choose tooling that leads or guides your teams down a given well-defined path vs. tooling that caters to large organizations' "needs," stemming from the accumulative force of Conway's law. The latter creates extensive, overly complex tooling that tries to solve everyone's problems. The former leads to a more stable, focused, and intuitive tooling design to solve a reasonable set of issues with minimal overlap.
 
 ## People
 
 ### Contributions
 
-* Everyone at all levels should be able to contribute while having the proper guardrails in place to feel safe and align with organizational requirements.
+* Engineers at all levels should be able to contribute while having the proper guardrails in place to feel safe and align with organizational requirements.
 
 ### Development
 
