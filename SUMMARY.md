@@ -54,6 +54,6 @@
     * [Networking](product-guides/google-cloud-platform/landing-zone/google-cloud-networking.md)
     * [Kitchen-Terraform Testing Resources](product-guides/google-cloud-platform/landing-zone/google-cloud-kitchen-terraform.md)
 * [💻 GitHub](product-guides/github/README.md)
-  * [Continuous Delivery Enablement](product-guides/github/continuous-delivery-enablement.md)
-  * [Organization Management](product-guides/github/organization-management.md)
+  * [Organization Management](product-guides/github/organization-management/README.md)
+    * [Continuous Delivery Enablement](product-guides/github/organization-management/continuous-delivery-enablement.md)
 * [📊 Datadog](product-guides/datadog.md)
