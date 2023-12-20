@@ -16,7 +16,6 @@
   * [ADR-0004](fundamentals/architecture-decision-records/adr-0001-2.md)
 * [🔩 Development Setup](fundamentals/development-setup/README.md)
   * [Docker](fundamentals/development-setup/docker.md)
-  * [Gentoo](fundamentals/development-setup/gentoo.md)
   * [GitHub Codespaces](fundamentals/development-setup/github-codespaces.md)
   * [Ubuntu](fundamentals/development-setup/ubuntu.md)
   * [Windows (WSL Ubuntu)](fundamentals/development-setup/windows-wsl.md)

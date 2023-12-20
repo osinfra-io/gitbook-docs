@@ -10,7 +10,7 @@ description: >-
 
 ## Images
 
-Images for Ubuntu and Gentoo are available. Choose the image you are most familiar with.
+Images for Ubuntu are available.
 
 {% tabs %}
 {% tab title="Ubuntu" %}
@@ -24,20 +24,6 @@ Run the image in interactive mode.
 
 ```bash
 docker run -it ghcr.io/osinfra-io/ubuntu:latest
-```
-{% endtab %}
-
-{% tab title="Gentoo" %}
-Pull the following image from the GitHub container registry.
-
-```bash
-docker pull ghcr.io/osinfra-io/gentoo:latest
-```
-
-Run the image in interactive mode.
-
-```bash
-docker run -it ghcr.io/osinfra-io/gentoo:latest
 ```
 {% endtab %}
 {% endtabs %}
