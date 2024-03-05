@@ -2,14 +2,14 @@
 
 ## Overview
 
-* [⚙ Welcome!](README.md)
+* [⚙️ Welcome!](README.md)
   * [Key Concepts](overview/readme/key-concepts.md)
   * [Team Norms](overview/readme/team-norms.md)
   * [Language](overview/readme/language.md)
 
 ## Fundamentals
 
-* [🛠 Architecture Decision Records](fundamentals/architecture-decision-records/README.md)
+* [🛠️ Architecture Decision Records](fundamentals/architecture-decision-records/README.md)
   * [ADR-0001](fundamentals/architecture-decision-records/adr-0001.md)
   * [ADR-0002](fundamentals/architecture-decision-records/adr-0001-1.md)
   * [ADR-0003](fundamentals/architecture-decision-records/adr-0003.md)
@@ -19,7 +19,7 @@
   * [GitHub Codespaces](fundamentals/development-setup/github-codespaces.md)
   * [Ubuntu](fundamentals/development-setup/ubuntu.md)
   * [Windows (WSL Ubuntu)](fundamentals/development-setup/windows-wsl.md)
-* [⚒ Tools](fundamentals/tools/README.md)
+* [⚒️ Tools](fundamentals/tools/README.md)
   * [Backstage](fundamentals/tools/backstage.md)
   * [Datadog](fundamentals/tools/datadog.md)
   * [GitBook](fundamentals/tools/gitbook.md)
@@ -40,8 +40,8 @@
 
 ## Product Guides
 
-* [🧑💻 Backstage](product-guides/backstage.md)
-* [☁ Google Cloud Platform](product-guides/google-cloud-platform/README.md)
+* [🧑‍💻 Backstage](product-guides/backstage.md)
+* [☁️ Google Cloud Platform](product-guides/google-cloud-platform/README.md)
   * [Kubernetes](product-guides/google-cloud-platform/kubernetes/README.md)
     * [Istio](product-guides/google-cloud-platform/kubernetes/istio.md)
     * [cert-manager](product-guides/google-cloud-platform/kubernetes/cert-manager.md)
