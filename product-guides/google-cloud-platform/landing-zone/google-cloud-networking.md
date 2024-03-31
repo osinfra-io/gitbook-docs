@@ -1,15 +1,15 @@
 ---
 description: >-
-  A common network resource layer that aligns with our Google Cloud landing zone
+  A standard network resource layer that aligns with our Google Cloud landing zone
   platform design. A landing zone should be a prerequisite to deploying
   enterprise workloads in a cloud environment.
 ---
 
 # Networking
 
-This layer provides common networking resources like VPCs, VPNs, DNS, NATs, and more to platform teams.  It's a lower-level layer and, in most cases, isn't geared toward stream-aligned teams. Terraform manages it and provides a consistent experience for developers to consume common resources.
+This layer provides platform teams with common networking resources like VPCs, VPNs, DNS, NATs, and more.  It's a lower-level layer and, in most cases, isn't geared toward stream-aligned teams. Terraform manages it and provides a consistent experience for developers to consume common resources.
 
-Providing several common services across an organization is key to enabling fast flow and removing low-level tasks for teams. Things like VPCs, VPNs, DNS, and NATs can take up a lot of development time when the cloud resources they want to use require them.
+Providing several standard services across an organization is critical to enabling fast flow and removing low-level tasks for teams. Things like VPCs, VPNs, DNS, and NATs can take up a lot of development time when the cloud resources they want to use require them.
 
 ## CIDR Blocks
 
@@ -24,11 +24,11 @@ The following CIDR blocks are available:
 
 ### VPC Name: `standard-shared`
 
-> NOTE: This VPC uses the same ranges for sandbox, pre-production and production. It uses the default size for the subnet's primary IP range, the subnet's secondary IP range for Pods and the subnet's secondary IP range for Services.
+> NOTE: This VPC uses the same sandbox, non-production, and production ranges. Each environment has a project and operates independently from each other. It uses the default size for the subnet's primary IP range, the subnet's secondary IP range for Pods, and the subnet's secondary IP range for Services.
 
 [GKE IPAM calculator](https://googlecloudplatform.github.io/gke-ip-address-management)
 
-We are breaking up the `10.0.0.0/10` CIDR block with the above calculator using the following inputs:
+We break up the `10.0.0.0/10` CIDR block with the above calculator using the following inputs:
 
 ```json
 {
@@ -46,7 +46,7 @@ We are breaking up the `10.0.0.0/10` CIDR block with the above calculator using 
 
 #### Kubernetes Info
 
-_NOTES: A Kubernetes_ [_VPC-native cluster_](https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips) _uses_ [_secondary ranges_](https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips#cluster\_sizing\_secondary\_range\_pods) _for Pods & Services._
+> NOTE: A Kubernetes [VPC-native cluster_](https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips) uses [secondary ranges](https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips#cluster\_sizing\_secondary\_range\_pods) for Pods & Services.
 
 **The size of the cluster's secondary ranges determines the maximum number of Pods and Services for a given GKE cluster. The maximum number of nodes in the cluster is limited by the size of the cluster's subnet's primary IP address range and the cluster's Pod address range.**
 
