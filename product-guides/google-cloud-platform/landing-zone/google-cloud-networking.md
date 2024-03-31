@@ -38,13 +38,13 @@ We break up the `10.0.0.0/10` CIDR block with the above calculator using the fol
 }
 </code></pre>
 
-A Kubernetes [VPC-native cluster\_](https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips) uses [secondary ranges](https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips#cluster\_sizing\_secondary\_range\_pods) for Pods & Services.
+A Kubernetes [VPC-native cluster](https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips) uses [secondary ranges](https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips#cluster\_sizing\_secondary\_range\_pods) for Pods & Services.
 
 {% hint style="info" %}
 The size of the cluster's secondary ranges determines the maximum number of Pods and Services for a given GKE cluster. The maximum number of nodes in the cluster is limited by the size of the cluster's subnet's primary IP address range and the cluster's Pod address range.
 {% endhint %}
 
-This will give us up to 31 clusters, and each cluster will support the following:
+This will give us up to 31 clusters (in each /10), and each cluster will support the following:
 
 * Up to 510 nodes per cluster
 * Up to 2048 services per cluster
