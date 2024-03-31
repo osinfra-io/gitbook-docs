@@ -1,15 +1,15 @@
 ---
 description: >-
-  A standard network resource layer that aligns with our Google Cloud landing zone
-  platform design. A landing zone should be a prerequisite to deploying
+  A standard network resource layer that aligns with our Google Cloud landing
+  zone platform design. A landing zone should be a prerequisite to deploying
   enterprise workloads in a cloud environment.
 ---
 
 # Networking
 
-This layer provides platform teams with common networking resources like VPCs, VPNs, DNS, NATs, and more.  It's a lower-level layer and, in most cases, isn't geared toward stream-aligned teams. Terraform manages it and provides a consistent experience for developers to consume common resources.
+This layer provides platform teams with common networking resources like VPCs, VPNs, DNS, and NATs. It's a lower-level layer and, in most cases, isn't geared toward stream-aligned teams. Terraform manages it and provides a consistent experience for developers to consume common resources.
 
-Providing several standard services across an organization is critical to enabling fast flow and removing low-level tasks for teams. Things like VPCs, VPNs, DNS, and NATs can take up a lot of development time when the cloud resources they want to use require them.
+Providing several standard services across an organization is critical to enabling fast flow and eliminating low-level tasks for teams.&#x20;
 
 ## CIDR Blocks
 
@@ -24,70 +24,35 @@ The following CIDR blocks are available:
 
 ### VPC Name: `standard-shared`
 
-> NOTE: This VPC uses the same sandbox, non-production, and production ranges. Each environment has a project and operates independently from each other. It uses the default size for the subnet's primary IP range, the subnet's secondary IP range for Pods, and the subnet's secondary IP range for Services.
+This VPC uses the same sandbox, non-production, and production ranges. Each environment has a project and operates independently from each other. It uses the default size for the subnet's primary IP range, the subnet's secondary IP range for Pods, and the subnet's secondary IP range for Services.
 
 [GKE IPAM calculator](https://googlecloudplatform.github.io/gke-ip-address-management)
 
 We break up the `10.0.0.0/10` CIDR block with the above calculator using the following inputs:
 
-```json
-{
- "network": "10.0.0.0",
- "netmask": 10,
- "nodeNetmask": 20,
- "clusterNetmask": 14,
- "serviceNetmask": 20,
- "nodePodNetmask": 24,
+<pre class="language-json"><code class="lang-json">{
+<strong> "network": "10.0.0.0",
+</strong> "netmask": 10,
+ "nodeNetmask": 21,
+ "clusterNetmask": 15,
+ "serviceNetmask": 21,
+ "nodePodNetmask": "24",
  "masterNetwork": "UNIQUE",
  "locationType": "REGIONAL",
  "extraZones": 1
 }
-```
+</code></pre>
 
-#### Kubernetes Info
+A Kubernetes [VPC-native cluster\_](https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips) uses [secondary ranges](https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips#cluster\_sizing\_secondary\_range\_pods) for Pods & Services.
 
-> NOTE: A Kubernetes [VPC-native cluster_](https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips) uses [secondary ranges](https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips#cluster\_sizing\_secondary\_range\_pods) for Pods & Services.
+{% hint style="info" %}
+The size of the cluster's secondary ranges determines the maximum number of Pods and Services for a given GKE cluster. The maximum number of nodes in the cluster is limited by the size of the cluster's subnet's primary IP address range and the cluster's Pod address range.
+{% endhint %}
 
-**The size of the cluster's secondary ranges determines the maximum number of Pods and Services for a given GKE cluster. The maximum number of nodes in the cluster is limited by the size of the cluster's subnet's primary IP address range and the cluster's Pod address range.**
+This will give us up to 31 clusters, and each cluster will support the following:
 
-This will give us 15 clusters, and each cluster will support the following:
+* Up to 510 nodes per cluster
+* Up to 2048 services per cluster
+* Up to 110 pods per node
 
-* Up to 1023 node(s) per cluster.
-* Up to 4096 service(s) per cluster.
-* Up to 110 pods per node.
-
-**Master CIDR Block:**
-
-|  Subnet Address |      Cluster      |
-| :-------------: | :---------------: |
-|  10.61.224.0/28 | services-us-east1 |
-| 10.61.224.16/28 | services-us-east4 |
-| 10.61.224.32/28 |                   |
-| 10.61.224.48/28 |                   |
-
-**Primary Ranges:**
-
-| Subnet Address | Nodes |          Name         |
-| :------------: | :---: | :-------------------: |
-|  10.60.0.0/20  |  4092 | services-k8s-us-east1 |
-|  10.60.16.0/20 |  4092 | services-k8s-us-east4 |
-|  10.60.32.0/20 |  4092 |                       |
-|  10.60.48.0/20 |  4092 |                       |
-
-**Secondary Pod Ranges:**
-
-| Subnet Address |  Pods  |            Name            |      Cluster      |
-| :------------: | :----: | :------------------------: | :---------------: |
-|   10.0.0.0/14  | 112640 | services-k8s-pods-us-east1 | services-us-east1 |
-|   10.4.0.0/14  | 112640 | services-k8s-pods-us-east4 | services-us-east4 |
-|   10.8.0.0/14  | 112640 |                            |                   |
-|  10.12.0.0/14  | 112640 |                            |                   |
-
-**Secondary Service Ranges:**
-
-| Subnet Address | Services |              Name              |      Cluster      |
-| :------------: | :------: | :----------------------------: | :---------------: |
-| 10.60.240.0/20 |   4096   | services-k8s-services-us-east1 | services-us-east1 |
-|  10.61.0.0/20  |   4096   | services-k8s-services-us-east4 | services-us-east4 |
-|  10.61.16.0/20 |   4096   |                                |                   |
-|  10.61.32.0/20 |   4096   |                                |                   |
+<table data-view="cards"><thead><tr><th>Cluster</th><th>Primary CIDR</th><th>Secondary PODs CIDR</th><th>Secondary Services CIDR</th><th>Master CIDR</th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>services-us-east1-b</td><td>10.62.0.0/21</td><td>10.0.0.0/15</td><td>10.62.248.0/21</td><td>10.63.240.0/28</td><td><a href="../../../.gitbook/assets/kubernetes-engine-card.png">kubernetes-engine-card.png</a></td></tr><tr><td>services-us-east1-c</td><td>10.62.8.0/21</td><td>10.2.0.0/15</td><td>10.63.0.0/21</td><td>10.63.240.16/28</td><td><a href="../../../.gitbook/assets/kubernetes-engine-card.png">kubernetes-engine-card.png</a></td></tr><tr><td>services-us-east1-d</td><td>10.62.16.0/21</td><td>10.4.0.0/15</td><td>10.63.8.0/21</td><td>10.63.240.32/28</td><td><a href="../../../.gitbook/assets/kubernetes-engine-card.png">kubernetes-engine-card.png</a></td></tr><tr><td>services-us-east4-a</td><td>10.62.24.0/21</td><td>10.6.0.0/15</td><td>10.63.16.0/21</td><td>10.63.240.48/28</td><td><a href="../../../.gitbook/assets/kubernetes-engine-card.png">kubernetes-engine-card.png</a></td></tr><tr><td>services-us-east4-b</td><td>10.62.32.0/21</td><td>10.8.0.0/15</td><td>10.63.24.0/21</td><td>10.63.240.64/28</td><td><a href="../../../.gitbook/assets/kubernetes-engine-card.png">kubernetes-engine-card.png</a></td></tr><tr><td>services-us-east4-c</td><td>10.62.40.0/21</td><td>10.10.0.0/15</td><td>10.63.32.0/21</td><td>10.63.240.80/28</td><td><a href="../../../.gitbook/assets/kubernetes-engine-card.png">kubernetes-engine-card.png</a></td></tr></tbody></table>
