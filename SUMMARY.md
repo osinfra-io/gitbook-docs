@@ -29,8 +29,6 @@
     * [Coding Conventions](fundamentals/tools/terraform/terraform-coding-conventions.md)
   * [Testing](fundamentals/tools/testing/README.md)
     * [Infracost](fundamentals/tools/testing/infracost.md)
-    * [Inspec](fundamentals/tools/testing/inspec.md)
-    * [Kitchen-Terraform](fundamentals/tools/testing/kitchen-terraform.md)
 
 ## Use Cases
 
