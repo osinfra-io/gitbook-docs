@@ -49,7 +49,7 @@
     * [Workload Identity](product-guides/google-cloud-platform/landing-zone/google-cloud-workload-identity.md)
     * [Terraform Backend](product-guides/google-cloud-platform/landing-zone/google-cloud-terraform-backend.md)
     * [Networking](product-guides/google-cloud-platform/landing-zone/google-cloud-networking.md)
-    * [Kitchen-Terraform Testing Resources](product-guides/google-cloud-platform/landing-zone/google-cloud-kitchen-terraform.md)
+    * [Terraform Testing Resources](product-guides/google-cloud-platform/landing-zone/google-cloud-terraform-testing.md)
 * [💻 GitHub](product-guides/github/README.md)
   * [Organization Management](product-guides/github/organization-management/README.md)
     * [Continuous Delivery Enablement](product-guides/github/organization-management/continuous-delivery-enablement.md)
