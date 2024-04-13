@@ -4,6 +4,8 @@ description: Reduce the cognitive load of teams and improve their capacity.
 
 # Key Concepts
 
+The problems we see across the industry clearly indicate we need to retool from the very bottom: the infrastructure. A key fundamental of Open Source Infrastructure (as Code) is a "pay now, live later" approach vs. the traditional whims of instant gratification. Our approach leads to a culture of continuous improvement and responsiveness and avoids a path of long-term decline.
+
 Suppose the underlying or lower layer processes are not well-defined. In that case, the upper layers will be unstable and unable to provide the firm foundation needed. Open Source Infrastructure (as Code) aims to lessen the [chaotic approach](https://youtu.be/j5M16qooAvo?t=87) of traditional large organizations' cloud engineering practices by providing examples and ideas around a compelling, supportable foundation that makes it easier for teams to do the right thing—over time, reducing the cognitive load of teams that would otherwise be far beyond their capacity.
 
 ## Tooling
