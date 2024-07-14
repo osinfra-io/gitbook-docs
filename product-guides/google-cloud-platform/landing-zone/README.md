@@ -1,7 +1,6 @@
 ---
 description: >-
-  Google Cloud landing zone platform to run scalable, production-ready
-  enterprise workloads.
+  Google Cloud landing zone platform to run scalable, production-ready enterprise workloads.
 ---
 
 # Landing Zone
@@ -19,7 +18,7 @@ A modular and scalable configuration that enables organizations to adopt Google 
 
 ## Response Times 🕙
 
-* Responsible team: [Platform - Google Cloud Landing Zone](https://github.com/orgs/osinfra-io/teams/google-cloud-platform-team)
+* Responsible team: [Platform - Google Cloud Landing Zone](https://github.com/orgs/osinfra-io/teams/platform-google-cloud-landing-zone)
 * Response time for incidents: `60 minutes`
 * Response time for other incidents: `120 minutes`
 * Response time for support: `60 minutes`
