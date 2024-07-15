@@ -20,7 +20,6 @@
   * [Ubuntu](fundamentals/development-setup/ubuntu.md)
   * [Windows (WSL Ubuntu)](fundamentals/development-setup/windows-wsl.md)
 * [⚒️ Tools](fundamentals/tools/README.md)
-  * [Backstage](fundamentals/tools/backstage.md)
   * [Datadog](fundamentals/tools/datadog.md)
   * [GitBook](fundamentals/tools/gitbook.md)
   * [GitHub](fundamentals/tools/github.md)
@@ -38,7 +37,6 @@
 
 ## Product Guides
 
-* [🧑‍💻 Backstage](product-guides/backstage.md)
 * [☁️ Google Cloud Platform](product-guides/google-cloud-platform/README.md)
   * [Kubernetes](product-guides/google-cloud-platform/kubernetes/README.md)
     * [Istio](product-guides/google-cloud-platform/kubernetes/istio.md)
