@@ -13,6 +13,7 @@ A modular and scalable configuration that enables organizations to adopt Google 
 ## Service Interfaces 🔩
 
 * [Add or update Kubernetes namespaces](https://github.com/osinfra-io/google-cloud-kubernetes/issues/new?assignees=\&labels=enhancement%2Cgood+first+issue\&projects=\&template=add-update-k8s-namespace.yml\&title=%F0%9F%94%A9+Add+or+update+Kubernetes+namespaces)
+* [Other](https://github.com/osinfra-io/google-cloud-kubernetes/issues/new)
 
 ## Response Times 🕙
 
@@ -40,7 +41,7 @@ Contact exclusively via:
 Contact via any of these:
 
 * Discord: [Platform - Google Cloud Kubernetes](https://discord.gg/YPg4AmMDvF)
-* Email address: [platform-google-cloud-landing-zone@osinfra.io](mailto:platform-google-kubernetes@osinfra.io)
+* Email address: [platform-google-cloud-kubernetes@osinfra.io](mailto:platform-google-kubernetes@osinfra.io)
 * Phone number:
 * Office hours (EST): `Weekdays 5:00PM - 10:00PM` `Weekends 8:00AM - 5:00PM`
 {% endtab %}
