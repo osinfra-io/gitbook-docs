@@ -16,7 +16,7 @@ Enables organizations to adopt Datadog for their business needs.&#x20;
 
 ## Response Times 🕙
 
-* Responsible team: [Platform - ](https://github.com/orgs/osinfra-io/teams/platform-google-cloud-kubernetes)[Datadog](https://github.com/orgs/osinfra-io/teams/platform-datadog)
+* Responsible team: [Platform - Datadog](https://github.com/orgs/osinfra-io/teams/platform-datadog)
 * Response time for incidents: `60 minutes`
 * Response time for other incidents: `120 minutes`
 * Response time for support: `60 minutes`
