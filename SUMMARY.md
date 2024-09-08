@@ -28,6 +28,7 @@
     * [Coding Conventions](fundamentals/tools/terraform/terraform-coding-conventions.md)
   * [Testing](fundamentals/tools/testing/README.md)
     * [Infracost](fundamentals/tools/testing/infracost.md)
+    * [Checkov](fundamentals/tools/testing/checkov.md)
 
 ## Use Cases
 
@@ -40,14 +41,15 @@
 * [☁️ Google Cloud Platform](product-guides/google-cloud-platform/README.md)
   * [Kubernetes](product-guides/google-cloud-platform/kubernetes/README.md)
     * [Istio](product-guides/google-cloud-platform/kubernetes/istio.md)
-    * [cert-manager](product-guides/google-cloud-platform/kubernetes/cert-manager.md)
   * [Landing Zone](product-guides/google-cloud-platform/landing-zone/README.md)
     * [Resource Hierarchy and IAM](product-guides/google-cloud-platform/landing-zone/google-cloud-hierarchy.md)
     * [Audit Logging](product-guides/google-cloud-platform/landing-zone/google-cloud-audit-logging.md)
     * [Workload Identity](product-guides/google-cloud-platform/landing-zone/google-cloud-workload-identity.md)
     * [Terraform Backend](product-guides/google-cloud-platform/landing-zone/google-cloud-terraform-backend.md)
     * [Networking](product-guides/google-cloud-platform/landing-zone/google-cloud-networking.md)
-* [💻 GitHub](product-guides/github/README.md)
-  * [Organization Management](product-guides/github/organization-management/README.md)
-    * [Continuous Delivery Enablement](product-guides/github/organization-management/continuous-delivery-enablement.md)
-* [📊 Datadog](product-guides/datadog.md)
+    * [Services](product-guides/google-cloud-platform/landing-zone/services.md)
+* [👨‍💻 GitHub](product-guides/github/README.md)
+  * [Organization Management](product-guides/github/organization-management.md)
+  * [Continuous Delivery Enablement](product-guides/github/continuous-delivery-enablement.md)
+* [📊 Datadog](product-guides/datadog/README.md)
+  * [Organization Management](product-guides/datadog/organization-management.md)

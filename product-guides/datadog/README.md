@@ -6,7 +6,7 @@ description: See inside any stack, any app, at any scale, anywhere.
 
 
 
-<figure><img src="../.gitbook/assets/datadog.png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/datadog.png" alt="" width="188"><figcaption></figcaption></figure>
 
 Enables organizations to adopt Datadog for their business needs.&#x20;
 
@@ -49,4 +49,4 @@ Contact via any of these:
 
 ## Platform Modules 🏗️
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Datadog</td><td>This repository manages Datadog resources.</td><td><a href="../.gitbook/assets/datadog-card.png">datadog-card.png</a></td><td><a href="https://github.com/osinfra-io/datadog-organization-management">https://github.com/osinfra-io/datadog-organization-management</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Datadog</td><td>This repository manages Datadog resources.</td><td><a href="../../.gitbook/assets/datadog-card.png">datadog-card.png</a></td><td><a href="https://github.com/osinfra-io/datadog-organization-management">https://github.com/osinfra-io/datadog-organization-management</a></td></tr></tbody></table>
