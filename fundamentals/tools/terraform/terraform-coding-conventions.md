@@ -33,7 +33,7 @@ A block is a container for other content.&#x20;
 
 ### Variables
 
-Variables in Terraform define reusable and configurable values to parameterize your configuration.&#x20;
+[Variables ](https://developer.hashicorp.com/terraform/language/values/variables)in Terraform define reusable and configurable values to parameterize your configuration.&#x20;
 
 #### Variables should be in alphabetical order. Keeping Terraform variables in alphabetical order has a few practical benefits:
 
