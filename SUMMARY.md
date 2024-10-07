@@ -41,6 +41,7 @@
 * [☁️ Google Cloud Platform](product-guides/google-cloud-platform/README.md)
   * [Kubernetes](product-guides/google-cloud-platform/kubernetes/README.md)
     * [Istio](product-guides/google-cloud-platform/kubernetes/istio.md)
+    * [cert-manager](product-guides/google-cloud-platform/kubernetes/cert-manager.md)
   * [Landing Zone](product-guides/google-cloud-platform/landing-zone/README.md)
     * [Resource Hierarchy and IAM](product-guides/google-cloud-platform/landing-zone/google-cloud-hierarchy.md)
     * [Audit Logging](product-guides/google-cloud-platform/landing-zone/google-cloud-audit-logging.md)
