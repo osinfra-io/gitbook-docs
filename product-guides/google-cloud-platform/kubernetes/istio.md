@@ -6,7 +6,7 @@ description: >-
 
 # Istio
 
-<figure><img src="../../../.gitbook/assets/istio.png" alt="" width="200"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/istio.png" alt="" width="100"><figcaption></figcaption></figure>
 
 [Istio](https://istio.io) extends Kubernetes to establish a programmable, application-aware network. Working with Kubernetes and traditional workloads, Istio brings standard, universal traffic management, telemetry, and security to complex deployments.
 

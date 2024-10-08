@@ -7,7 +7,7 @@ description: >-
 
 # Gatekeeper
 
-<figure><img src="../../../.gitbook/assets/opa.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/opa.png" alt="" width="188"><figcaption></figcaption></figure>
 
 [Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs) is a Kubernetes-native [_admission controller_](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/?ref=blog.sighup.io) that extends the capabilities of OPA to Kubernetes clusters. By combining OPA’s policy engine with Kubernetes’ admission control mechanism, Gatekeeper enforces policies on Kubernetes resources during creation and update operations.
 
