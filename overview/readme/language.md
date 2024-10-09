@@ -1,7 +1,8 @@
 ---
 description: >-
-  Build up a common, rigorous language between platform engineers and
-  developers.
+  Shared nomenclature consistently used by both technical and non-technical
+  stakeholders within an organization, fostering a common understanding of terms
+  and concepts relevant to the domain.
 ---
 
 # Language
