@@ -12,14 +12,8 @@ description: >-
 >
 > — _Melvin E. Conway_
 
-The three primary interaction modes are key concepts from [Team Topologies](https://teamtopologies.com/key-concepts).&#x20;
+The three primary interaction modes are key concepts from [Team Topologies](https://teamtopologies.com/key-concepts).
 
 * Collaboration: working together for a defined period to discover new things (APIs, practices, technologies, etc).
 * X-as-a-Service: one team provides, and one team consumes something "as a Service."
 * Facilitation: one team helps and mentors another team.
-
-<div align="center">
-
-<figure><img src="../../.gitbook/assets/google-cloud-platform-team-topologies.svg" alt="" width="188"><figcaption></figcaption></figure>
-
-</div>

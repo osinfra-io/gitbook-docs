@@ -3,7 +3,7 @@
 ## Overview
 
 * [⚙️ Welcome!](README.md)
-  * [Key Concepts](overview/readme/key-concepts.md)
+  * [Fundametals](overview/readme/key-concepts.md)
   * [Team Norms](overview/readme/team-norms.md)
   * [Language](overview/readme/language.md)
 

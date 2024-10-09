@@ -1,10 +1,12 @@
 ---
-description: Reduce the cognitive load of teams and improve their capacity.
+description: >-
+  The essential elements or core components that everything else is built upon
+  or depends on.
 ---
 
-# Key Concepts
+# Fundametals
 
-The problems across the industry indicate we need to rethink and retool from the bottom up. An essential fundamental of Open Source Infrastructure (as Code) is a "pay now, live later" approach vs. the traditional whims of instant gratification, which has arguably gotten the industry into trouble. A reasonable definition of maturity is having the ability to sacrifice the present for the future. Simply put, we focus on maturity and communicating problems up the hierarchy so everyone can understand and, more importantly, keep their truths. Improvement there will create a better balance and increase agility over time. Our approach leads to a culture of continuous improvement and responsiveness and avoids a path of long-term decline.
+The challenges across the industry suggest we need to rethink and retool from the bottom up. A fundamental principle of Open Source Infrastructure (as Code) is finding a better balance between the sacrifices required for sustainable progress and the tendency to seek instant gratification, arguably leading to industry setbacks. In this context, maturity can be defined as sacrificing short-term gains for long-term success. Focusing on maturity and effectively communicating issues and their truths up the hierarchy enables everyone to understand the problems. This approach fosters continuous improvement, enhances agility, and steers us from long-term decline.
 
 Suppose the underlying or lower layer processes are not well-defined. In that case, the upper layers will be unstable and unable to serve their purpose. Open Source Infrastructure (as Code) aims to lessen the [chaotic approach](https://youtu.be/j5M16qooAvo?t=87) of traditional large organizations' cloud engineering practices by providing examples and ideas around compelling, supportable foundations that make it easier for teams to do the right thing—over time, reducing the cognitive load of teams that would otherwise be far beyond their capacity.
 
