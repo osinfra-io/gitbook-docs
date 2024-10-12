@@ -3,7 +3,7 @@
 ## Overview
 
 * [⚙️ Welcome!](README.md)
-  * [Fundamentals](overview/readme/key-concepts.md)
+  * [Fundamentals](overview/readme/fundamentals.md)
   * [Team Norms](overview/readme/team-norms.md)
   * [Language](overview/readme/language.md)
 
