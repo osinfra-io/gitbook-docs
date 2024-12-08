@@ -2,6 +2,7 @@
 description: >-
   Shared expectations of how to behave and regulate the interaction between
   teams.
+icon: people-carry-box
 ---
 
 # Team Norms

@@ -1,10 +1,11 @@
 ---
 description: >-
-  We focus on the core fundamental practice of platform engineering, Infrastructure
-  as Code.
+  We focus on the core fundamental practice of platform engineering,
+  Infrastructure as Code.
+icon: hand-wave
 ---
 
-# ⚙ Welcome
+# Welcome!
 
 ![](.gitbook/assets/osinfra)
 

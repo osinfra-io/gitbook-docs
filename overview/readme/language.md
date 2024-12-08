@@ -3,6 +3,7 @@ description: >-
   Shared nomenclature consistently used by both technical and non-technical
   stakeholders within an organization, fostering a common understanding of terms
   and concepts relevant to the domain.
+icon: book-open
 ---
 
 # Language

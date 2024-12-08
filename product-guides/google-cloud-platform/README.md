@@ -1,4 +1,8 @@
-# ☁ Google Cloud Platform
+---
+icon: google
+---
+
+# Google Cloud Platform
 
 <figure><img src="../../.gitbook/assets/google-cloud-platform.png" alt="" width="563"><figcaption></figcaption></figure>
 

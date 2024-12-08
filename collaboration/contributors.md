@@ -1,4 +1,8 @@
-# 🔧 Software Engineers
+---
+icon: user-check
+---
+
+# Contributors
 
 ## Get Started
 

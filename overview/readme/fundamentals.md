@@ -1,10 +1,8 @@
 ---
-description: >-
-  The essential elements or core components that everything else is built upon
-  or depends on.
+icon: arrows-repeat
 ---
 
-# Fundametals
+# Overview
 
 The challenges across the industry suggest we need to rethink and retool from the bottom up. A fundamental principle of Open Source Infrastructure (as Code) is finding a better balance between the sacrifices required for sustainable progress and the tendency to seek instant gratification, arguably leading to industry setbacks. In this context, maturity can be defined as sacrificing short-term gains for long-term success. Focusing on maturity and effectively communicating issues and their truths up the hierarchy enables everyone to understand the problems. This approach fosters continuous improvement, enhances agility, and steers us from long-term decline.
 

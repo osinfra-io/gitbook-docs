@@ -1,14 +1,13 @@
 ---
 description: See inside any stack, any app, at any scale, anywhere.
+icon: monitor-waveform
 ---
 
-# 📊 Datadog
-
-
+# Datadog
 
 <figure><img src="../../.gitbook/assets/datadog.png" alt="" width="188"><figcaption></figcaption></figure>
 
-Enables organizations to adopt Datadog for their business needs.&#x20;
+Enables organizations to adopt Datadog for their business needs.
 
 ## Service Interfaces 🔩
 
