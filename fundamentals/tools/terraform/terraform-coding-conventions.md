@@ -7,7 +7,7 @@ description: >-
 
 # Coding Conventions
 
-<figure><img src="../../../.gitbook/assets/terraform.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/terraform (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Style Conventions
 
@@ -22,7 +22,7 @@ You can enforce these conventions automatically by running `terraform fmt`
 
 ### Blocks
 
-A block is a container for other content.&#x20;
+A block is a container for other content.
 
 #### Block types should be in the following order and grouped with like types.
 
@@ -33,7 +33,7 @@ A block is a container for other content.&#x20;
 
 ### Variables
 
-[Variables ](https://developer.hashicorp.com/terraform/language/values/variables)in Terraform define reusable and configurable values to parameterize your configuration.&#x20;
+[Variables ](https://developer.hashicorp.com/terraform/language/values/variables)in Terraform define reusable and configurable values to parameterize your configuration.
 
 #### Variables should be in alphabetical order. Keeping Terraform variables in alphabetical order has a few practical benefits:
 
@@ -45,7 +45,7 @@ A block is a container for other content.&#x20;
 
 #### Avoid redundant variable names within the module's context when writing child modules. Avoiding redundant variable names in child modules offers several benefits:
 
-* **Clarity**: Eliminates unnecessary repetition, making the code easier to understand.&#x20;
+* **Clarity**: Eliminates unnecessary repetition, making the code easier to understand.
 * **Maintainability**: Reducing redundancy helps simplify future updates and modifications. Changing a variable name once is more manageable than updating multiple instances of a repetitive name.
 * **Modularity**: Promotes better modular design, as variables are defined clearly within the context of the module, preventing confusion when modules are reused in different environments.
 * **Consistency**: Encourages clean, consistent naming conventions across modules, improving readability and making it easier for others to work with the code.
@@ -57,5 +57,3 @@ A block is a container for other content.&#x20;
 * **Consistency in Large Projects**: When dealing with large infrastructure projects, prefixed variable names help maintain a clean, organized structure, making it easier for teams to collaborate and manage the code.
 * **Simplifies Debugging**: Prefixing helps pinpoint the source of issues faster, as it’s easier to identify which module a variable belongs to when troubleshooting.
 * **Improved Readability**: In root modules, prefixed variables provide context at a glance, making the code more understandable for others working on the project.
-
-&#x20;

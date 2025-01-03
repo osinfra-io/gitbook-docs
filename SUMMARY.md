@@ -20,8 +20,6 @@
   * [Ubuntu](fundamentals/development-setup/ubuntu.md)
   * [Windows (WSL Ubuntu)](fundamentals/development-setup/windows-wsl.md)
 * [Tools](fundamentals/tools/README.md)
-  * [Datadog](fundamentals/tools/datadog.md)
-  * [GitBook](fundamentals/tools/gitbook.md)
   * [GitHub](fundamentals/tools/github.md)
   * [Terraform](fundamentals/tools/terraform/README.md)
     * [Child Modules](fundamentals/tools/terraform/child-modules.md)
@@ -55,3 +53,4 @@
   * [Continuous Delivery Enablement](product-guides/github/continuous-delivery-enablement.md)
 * [Datadog](product-guides/datadog/README.md)
   * [Organization Management](product-guides/datadog/organization-management.md)
+* [Backstage](product-guides/backstage.md)
