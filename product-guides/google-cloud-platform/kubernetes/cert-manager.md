@@ -14,3 +14,5 @@ description: >-
 
 **cert-manager** was accepted to [CNCF](https://www.cncf.io/projects/cert-manager) on November 10, 2020, and moved to the **Incubating** maturity level on September 19, 2022.
 
+**cert-manager** was moved to the trial ring in the [Thoughtworks Technology Radar](https://www.thoughtworks.com/en-us/radar/platforms/istio)[ ](https://www.thoughtworks.com/en-us/radar/tools/cert-manager)in March 2022.&#x20;
+

@@ -14,6 +14,10 @@ A modular and scalable configuration that enables organizations to adopt [Google
 
 [Kubernetes](https://kubernetes.io) was accepted to [CNCF ](https://www.cncf.io/projects/kubernetes)on March 10, 2016 at the Incubating maturity level and then moved to the Graduated maturity level on March 6, 2018.
 
+Kubernetes was moved to the adopt ring in the [Thoughtworks Technology Radar](https://www.thoughtworks.com/en-us/radar/platforms/kubernetes) in May 2018.&#x20;
+
+
+
 ## Service Interfaces 🔩
 
 * [Add or update Kubernetes namespaces](https://github.com/osinfra-io/google-cloud-kubernetes/issues/new?assignees=\&labels=enhancement%2Cgood+first+issue\&projects=\&template=add-update-k8s-namespace.yml\&title=%F0%9F%94%A9+Add+or+update+Kubernetes+namespaces)

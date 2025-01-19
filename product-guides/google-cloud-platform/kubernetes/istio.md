@@ -13,3 +13,5 @@ description: >-
 <figure><img src="../../../.gitbook/assets/cncf.png" alt=""><figcaption></figcaption></figure>
 
 Istio was accepted to [CNCF](https://www.cncf.io/projects/istio) on September 30, 2022, at the **Incubating** maturity level and then moved to the **Graduated** maturity level on July 12, 2023.
+
+Istio was moved to the adopt ring in the [Thoughtworks Technology Radar](https://www.thoughtworks.com/en-us/radar/platforms/istio) in May 2020.&#x20;
