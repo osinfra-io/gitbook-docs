@@ -9,7 +9,9 @@ description: >-
 
 ![](.gitbook/assets/osinfra)
 
-<mark style="color:yellow;">**Open Source Infrastructure (as Code)**</mark> is a development model for infrastructure that focuses on open collaboration and applying relative lessons learned from software development practices that organizations can use internally at scale.
+<mark style="color:yellow;">**Open Source Infrastructure (as Code)**</mark>&#x20;
+
+We are infrastructure as code engineers providing vendor-light solutions that organizations can use at scale. We value collaboration and learning out loud. Our goal is to deliver simple, secure, and supportable foundations that invest in your people and prioritize long-term success over short-term gains.
 
 <mark style="color:yellow;">**Infrastructure**</mark> is the set of systems and underlying resources that serve an organization and encompasses the services necessary for its teams and applications to function.
 
