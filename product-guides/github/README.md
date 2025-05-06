@@ -4,4 +4,4 @@ icon: github
 
 # GitHub
 
-<figure><img src="broken-reference" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/github.png" alt=""><figcaption></figcaption></figure>
