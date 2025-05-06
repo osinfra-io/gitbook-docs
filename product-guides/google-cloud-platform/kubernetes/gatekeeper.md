@@ -15,4 +15,4 @@ description: >-
 
 Open Policy Agent (OPA) was accepted to [CNCF](https://www.cncf.io/projects/open-policy-agent-opa) on March 29, 2018, moved to the **Incubating** maturity level on April 2, 2019, and then moved to the **Graduated** maturity level on January 29, 2021.
 
-Gatekeepr was moved to the trial ring in the [Thoughtworks Technology Radar](https://www.thoughtworks.com/en-us/radar/platforms/opa-gatekeeper-for-kubernetes) October 2021.&#x20;
+Gatekeeper was moved to the trial ring in the [Thoughtworks Technology Radar](https://www.thoughtworks.com/en-us/radar/platforms/opa-gatekeeper-for-kubernetes) October 2021.&#x20;
