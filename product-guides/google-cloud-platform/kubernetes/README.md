@@ -12,7 +12,7 @@ A modular and scalable configuration that enables organizations to adopt [Google
 
 <figure><img src="../../../.gitbook/assets/cncf.png" alt=""><figcaption></figcaption></figure>
 
-[Kubernetes](https://kubernetes.io) was accepted to [CNCF ](https://www.cncf.io/projects/kubernetes)on March 10, 2016 at the Incubating maturity level and then moved to the Graduated maturity level on March 6, 2018.
+[Kubernetes](https://kubernetes.io) was accepted to [CNCF](https://www.cncf.io/projects/kubernetes) on March 10, 2016 at the Incubating maturity level and then moved to the Graduated maturity level on March 6, 2018.
 
 Kubernetes was moved to the adopt ring in the [Thoughtworks Technology Radar](https://www.thoughtworks.com/en-us/radar/platforms/kubernetes) in May 2018.&#x20;
 
