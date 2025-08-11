@@ -25,8 +25,6 @@
     * [Child Modules](fundamentals/tools/opentofu/child-modules.md)
     * [Coding Conventions](fundamentals/tools/opentofu/terraform-coding-conventions.md)
   * [Testing](fundamentals/tools/testing/README.md)
-    * [Infracost](fundamentals/tools/testing/infracost.md)
-    * [Checkov](fundamentals/tools/testing/checkov.md)
 
 ## Collaboration
 
