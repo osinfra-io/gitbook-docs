@@ -43,6 +43,14 @@ Kubernetes add-on modules for service mesh, certificate management, policy enfor
       href="https://github.com/osinfra-io/pt-arche-kubernetes-opa-gatekeeper"
     />
   </div>
+  <div className="col col--4 margin-bottom--lg">
+    <ModuleCard
+      image="/img/authentik.svg"
+      title="pt-arche-kubernetes-authentik"
+      description="OpenTofu module that deploys Authentik on GKE via Helm and configures it as the centralized gateway identity provider, providing both an OIDC identity provider for Istio RequestAuthentication and an embedded outpost for the Istio ext_authz check endpoint"
+      href="https://github.com/osinfra-io/pt-arche-kubernetes-authentik"
+    />
+  </div>
 </div>
 
 ## Components
@@ -55,3 +63,4 @@ These modules cover the Kubernetes layer of Arche. All are deployed by Pneuma on
 | `pt-arche-kubernetes-cert-manager` | Pneuma | cert-manager with Let's Encrypt ACME issuance |
 | `pt-arche-kubernetes-datadog-operator` | Pneuma | Datadog Operator and Agent DaemonSet |
 | `pt-arche-kubernetes-opa-gatekeeper` | Pneuma | OPA Gatekeeper with constraint templates |
+| `pt-arche-kubernetes-authentik` | Pneuma | Authentik gateway identity provider (OIDC + ext_authz outpost) |
