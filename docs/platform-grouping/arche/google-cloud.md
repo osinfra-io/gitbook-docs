@@ -71,14 +71,14 @@ GCP infrastructure modules covering project governance, networking, compute, sto
 
 ## Components
 
-These modules cover the Google Cloud layer of Arche. The **Consumed By** column identifies which platform team primarily consumes each module.
+These modules cover the Google Cloud layer of Arche. The **Consumed By** column identifies which platform team primarily consumes each module; see the module cards above for what each one does.
 
-| Module | Consumed By | Purpose |
-|---|---|---|
-| `pt-arche-core-helpers` | All | Workspace parsing, labels, team data, environment detection |
-| `pt-arche-google-project` | Corpus | CIS-compliant GCP project with billing, APIs, and monitoring |
-| `pt-arche-google-network` | Corpus | Shared VPC with subnets, firewall rules, Cloud NAT, DNS |
-| `pt-arche-google-kubernetes-engine` | Pneuma | GKE cluster with Workload Identity, KMS, CIS hardening, Fleet |
-| `pt-arche-google-storage-bucket` | Corpus | GCS bucket with CMEK, uniform access, versioning |
-| `pt-arche-google-cloud-sql` | Stream-aligned teams | Cloud SQL with HA, backups, private IP |
-| `pt-arche-datadog-google-integration` | Corpus | Datadog GCP integration via Workload Identity, Pub/Sub, Cloud Asset |
+| Module | Consumed By |
+|---|---|
+| `pt-arche-core-helpers` | All |
+| `pt-arche-google-project` | Corpus |
+| `pt-arche-google-network` | Corpus |
+| `pt-arche-google-kubernetes-engine` | Pneuma |
+| `pt-arche-google-storage-bucket` | Corpus |
+| `pt-arche-google-cloud-sql` | Stream-aligned teams |
+| `pt-arche-datadog-google-integration` | Corpus |
