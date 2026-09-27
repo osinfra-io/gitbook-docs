@@ -52,7 +52,3 @@ Kubernetes add-on modules for service mesh, certificate management, policy enfor
     />
   </div>
 </div>
-
-## Components
-
-All modules on this page are deployed by Pneuma onto GKE clusters. See the module cards above for what each one does.

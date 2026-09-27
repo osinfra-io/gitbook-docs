@@ -68,17 +68,3 @@ GCP infrastructure modules covering project governance, networking, compute, sto
     />
   </div>
 </div>
-
-## Components
-
-These modules cover the Google Cloud layer of Arche. The **Consumed By** column identifies which platform team primarily consumes each module; see the module cards above for what each one does.
-
-| Module | Consumed By |
-|---|---|
-| `pt-arche-core-helpers` | All |
-| `pt-arche-google-project` | Corpus |
-| `pt-arche-google-network` | Corpus |
-| `pt-arche-google-kubernetes-engine` | Pneuma |
-| `pt-arche-google-storage-bucket` | Corpus |
-| `pt-arche-google-cloud-sql` | Stream-aligned teams |
-| `pt-arche-datadog-google-integration` | Corpus |
