@@ -168,6 +168,10 @@ Developers can use `/platform-grouping:test-local-gateway-stack` for complex bro
 
 The Kubernetes fixture exercises both direct Istio routing and the Istio-to-agentgateway-to-workload path, using the checked-out configuration modules. Full verification includes real Google sign-in, the trusted identity JSON, public-path bypasses, denial of forged identity headers, and ambient mTLS. An HTTP redirect alone does not establish end-to-end success. See [Module Development](../arche/module-development.md#optional-local-integration-tests) for the shared fixture convention and cloud-parity limits.
 
+Pneuma's `regional/authentik-config/authentication` child module owns the sandbox brand, custom flow, four stage bindings, two conditional password/MFA policy bindings, and shared identification settings. Both the cloud root and local Authentik fixture call it, so local iteration exercises the actual sandbox CSS and authentication-stage wiring, not an independent visual approximation. The existing built-in identification stage is managed by Arche using those shared settings and reused in the custom flow. Domain and titles are explicit caller inputs; local values are `authentik.localhost` and Development titles.
+
+Cloud stage/policy discovery, imports, Google credentials, groups, and environment enablement remain in the cloud root. Custom-flow creation remains sandbox-only; production and non-production still manage the default identification stage without creating the sandbox brand. Root `moved.tofu` blocks preserve all four resource families during extraction, and the fixture moves its existing Development brand into the shared module. Local verification checks the live brand, flow, stage/policy bindings, and identification settings against applied configuration; Google browser verification remains a separate requirement.
+
 ## Ownership Boundaries
 
 | Boundary | Responsibility |
