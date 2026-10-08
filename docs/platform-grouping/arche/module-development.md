@@ -155,6 +155,8 @@ The [platform-grouping plugin](https://github.com/osinfra-io/pt-ai-plugins/tree/
 
 The target runtime is a dedicated Docker Desktop Kubernetes cluster using the Kind provisioner. All stack components, including Authentik and PostgreSQL, run in Kubernetes. Setup must reject existing unowned installations rather than overwrite them, and cleanup must not purge shared CRDs. Local PostgreSQL, upstream images, and local TLS replace cloud database, registry, and certificate infrastructure; successful local checks do not validate GCP load balancers, Cloud Armor, Workload Identity, or multi-region behavior.
 
+Agentgateway modules require an explicit namespace and do not create it. Local fixtures own the `agentgateway` namespace; platform namespaces are declared in the Logos team configuration and created by Pneuma onboarding. Pneuma's `agentgateway` namespace is mesh-enabled, enrolling its workloads in ambient Istio.
+
 Real Google browser sign-in is necessary for a full end-to-end result. Configure the Google web client's `https://localhost/source/oauth/callback/google/` redirect and supply its credentials through the developer environment. Redirect checks alone must be reported as browser verification pending.
 
 ## Repository naming convention
