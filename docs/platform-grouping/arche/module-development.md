@@ -143,6 +143,20 @@ tests/
 
 The `helpers.tofu` in the skeleton is pre-pinned to the current `pt-arche-core-helpers` SHA so the new module starts with an up-to-date foundational dependency.
 
+## Optional local integration tests
+
+For complex application configuration changes, developers can choose to exercise Authentik, Istio, and agentgateway together before pushing to sandbox:
+
+```none
+/platform-grouping:test-local-gateway-stack
+```
+
+The [platform-grouping plugin](https://github.com/osinfra-io/pt-ai-plugins/tree/main/plugins/platform-grouping) owns the setup and verification runbook. Participating repositories keep component fixtures under `tests/local/`, with directly runnable `setup.sh`, `verify.sh`, and `teardown.sh` entry points. Fixtures use checked-out modules so local edits are exercised; generated state and credentials stay in ignored `.work/` directories. This workflow is opt-in, not a mandatory pre-push or CI gate, and remains separate from mocked OpenTofu tests.
+
+The target runtime is a dedicated Docker Desktop Kubernetes cluster using the Kind provisioner. All stack components, including Authentik and PostgreSQL, run in Kubernetes. Setup must reject existing unowned installations rather than overwrite them, and cleanup must not purge shared CRDs. Local PostgreSQL, upstream images, and local TLS replace cloud database, registry, and certificate infrastructure; successful local checks do not validate GCP load balancers, Cloud Armor, Workload Identity, or multi-region behavior.
+
+Real Google browser sign-in is necessary for a full end-to-end result. Configure the Google web client's `https://localhost/source/oauth/callback/google/` redirect and supply its credentials through the developer environment. Redirect checks alone must be reported as browser verification pending.
+
 ## Repository naming convention
 
 | Infrastructure type | Pattern | Example |

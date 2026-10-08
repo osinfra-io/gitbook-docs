@@ -162,6 +162,12 @@ The route uses `mode = "browser"` and `required_groups = ["all"]`. `/istio-test/
 
 OAuth callback requests under `/outpost.goauthentik.io` are routed directly to the embedded outpost on every protected browser host. This routing is required for the browser flow to return to the original application.
 
+### Optional pre-sandbox checks
+
+Developers can use `/platform-grouping:test-local-gateway-stack` for complex browser-auth and gateway configuration changes. This is an optional local integration workflow, not an additional CI or pre-push requirement.
+
+The Kubernetes fixture exercises both direct Istio routing and the Istio-to-agentgateway-to-workload path, using the checked-out configuration modules. Full verification includes real Google sign-in, the trusted identity JSON, public-path bypasses, denial of forged identity headers, and ambient mTLS. An HTTP redirect alone does not establish end-to-end success. See [Module Development](../arche/module-development.md#optional-local-integration-tests) for the shared fixture convention and cloud-parity limits.
+
 ## Ownership Boundaries
 
 | Boundary | Responsibility |
