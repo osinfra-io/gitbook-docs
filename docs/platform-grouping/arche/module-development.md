@@ -199,6 +199,18 @@ module "google_project" {
 
 The SHA must come from after the squash merge lands on `main`, not from the PR branch tip. Branch SHAs are unstable and can be rewritten; `main` SHAs are permanent.
 
+### Releasing the dependency chain
+
+Use the [platform-grouping plugin](https://github.com/osinfra-io/pt-ai-plugins/tree/main/plugins/platform-grouping)'s release skill:
+
+```none
+/platform-grouping:release-arche-modules
+```
+
+The skill discovers active Arche module repositories, including AgentGateway and Authentik, rather than relying on a fixed inventory. It compares released tag commits with `main`, handles initial `v0.1.0` releases, releases Core Helpers before its dependents, and updates the untagged scaffold. Modules without a Core Helpers dependency still participate in release detection.
+
+Consumer updates require confirmation and cover every deployment workspace in Corpus and Pneuma, including regional workspaces and nested add-ons. Canonical helper files are edited once so symlinks remain intact. Release PRs use existing `dependencies` and `opentofu` labels; signing failures are surfaced without rewriting commits or opening duplicate PRs. Admin merges require explicit authorization, and validation failures require separate approval before bypassing them.
+
 ## Core Invariant
 
 Every module `ref` must point to a post-merge commit SHA on `main` — never a branch name or semver tag. This makes every deployment reproducible and auditable.
