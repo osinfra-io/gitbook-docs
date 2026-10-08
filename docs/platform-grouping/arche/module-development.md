@@ -157,6 +157,8 @@ The target runtime is a dedicated Docker Desktop Kubernetes cluster using the Ki
 
 Agentgateway modules require an explicit namespace and do not create it. Local fixtures own the `agentgateway` namespace; platform namespaces are declared in the Logos team configuration and created by Pneuma onboarding. Pneuma's `agentgateway` namespace is mesh-enabled, enrolling its workloads in ambient Istio.
 
+Explicit local teardown deletes all fixture-owned namespaces and PostgreSQL data. The next setup starts with fresh users and application configuration. Shared CRDs, cluster system namespaces, and the fixture ownership marker are retained.
+
 Real Google browser sign-in is necessary for a full end-to-end result. Configure the Google web client's `https://localhost/source/oauth/callback/google/` redirect and supply its credentials through the developer environment. Redirect checks alone must be reported as browser verification pending.
 
 ## Repository naming convention
