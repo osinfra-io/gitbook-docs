@@ -143,6 +143,26 @@ tests/
 
 The `helpers.tofu` in the skeleton is pre-pinned to the current `pt-arche-core-helpers` SHA so the new module starts with an up-to-date foundational dependency.
 
+## Optional local integration tests
+
+For complex application configuration changes, developers can choose to exercise Authentik, Istio, and agentgateway together before pushing to sandbox:
+
+```none
+/platform-grouping:test-local-gateway-stack
+```
+
+The [platform-grouping plugin](https://github.com/osinfra-io/pt-ai-plugins/tree/main/plugins/platform-grouping) owns the setup and verification runbook. Participating repositories keep component fixtures under `tests/kubernetes/`, with directly runnable `setup.sh`, `verify.sh`, and `teardown.sh` entry points. Fixtures use checked-out modules so local edits are exercised; generated state and credentials stay in ignored `.work/` directories. Do not maintain parallel Docker Compose fixtures. This workflow is opt-in, not a mandatory pre-push or CI gate, and remains separate from mocked OpenTofu tests.
+
+The target runtime is a dedicated Docker Desktop Kubernetes cluster using the Kind provisioner. All stack components, including Authentik and PostgreSQL, run in Kubernetes. Setup must reject existing unowned installations rather than overwrite them, and cleanup must not purge shared CRDs. Local PostgreSQL, upstream images, and local TLS replace cloud database, registry, and certificate infrastructure; successful local checks do not validate GCP load balancers, Cloud Armor, Workload Identity, or multi-region behavior.
+
+The Authentik fixture and cloud root both call Pneuma's checked-out `regional/authentik-config/authentication` child module. The brand CSS/assets, custom authentication flow, identification settings, stage order, and conditional password/MFA policies are shared; only the resolved local domain and Development titles differ. The fixture supplies local OAuth, application, and group inputs and discovers built-in Authentik objects locally. Cloud discovery and environment enablement stay in the cloud root. Rerun Authentik setup and verification after editing this shared module; no database reset is needed.
+
+Agentgateway modules require an explicit namespace and do not create it. Local fixtures own the `agentgateway` namespace; platform namespaces are declared in the Logos team configuration and created by Pneuma onboarding. Pneuma's `agentgateway` namespace is mesh-enabled, enrolling its workloads in ambient Istio.
+
+Explicit local teardown deletes all fixture-owned namespaces and PostgreSQL data. The next setup starts with fresh users and application configuration. Shared CRDs, cluster system namespaces, and the fixture ownership marker are retained.
+
+Real Google browser sign-in is necessary for a full end-to-end result. Configure the Google web client's `https://localhost/source/oauth/callback/google/` redirect and supply its credentials through the developer environment. Redirect checks alone must be reported as browser verification pending.
+
 ## Repository naming convention
 
 | Infrastructure type | Pattern | Example |
