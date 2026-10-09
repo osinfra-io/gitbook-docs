@@ -177,7 +177,13 @@ The local Authentik fixture requires `agentgateway-admins` for `agentgateway.loc
 
 The reusable agentgateway admin routing submodule keeps its Service `ClusterIP` and restricts port `15000` to the Istio ingress identity. It publishes `/ui`, `/api`, and `/config_dump`; all must be protected together. Apply enforcement before publishing backend routes, and remove routes first during teardown.
 
-Cloud publication additionally requires Pneuma deployment/workflow integration and dedicated DNS/TLS hosts. Creating the SAML source alone does not deploy or publish agentgateway. Do not place its admin endpoints on the existing Pneuma diagnostic hostname, whose browser policy permits `all`.
+Pneuma separates the cloud controller/CRDs (`regional/agentgateway`) from proxy parameters (`regional/agentgateway/manifests`). Both target only Pneuma gateway clusters in the current zone, reuse shared configuration through relative symlinks, and pin the released Arche module. The controller workspace installs an unconditional admin-port DENY policy before the Gateway, so this deployment foundation cannot provide UI access.
+
+The sandbox, non-production, and production workflows deploy controllers after Istio manifests, then apply proxy parameters in a separate job. Their repository-variable gates are `AGENTGATEWAY_SANDBOX_ENABLED`, `AGENTGATEWAY_NONPROD_ENABLED`, and `AGENTGATEWAY_PROD_ENABLED`; only the exact value `true` enables deployment. Leave these unset until the corresponding Logos-managed **Agentgateway** approval environments exist. Controller and manifest jobs use the same environment-specific approvers.
+
+Sandbox teardown removes proxy parameters before the controller/CRDs, retains the closed-admin policy until the Gateway is removed, and keeps Istio installed until agentgateway removal succeeds. Keep the sandbox gate enabled until teardown completes; disabling a deployment gate does not remove existing infrastructure. A failed agentgateway teardown blocks Istio removal.
+
+Cloud **admin publication** still requires the released administrator authorization/routing interfaces, trusted SAML inputs, dedicated DNS/TLS hosts, and host-scoped Authentik enforcement. Replace the closed-admin policy only as part of that verified publication step. Creating the SAML source or enabling the deployment foundation alone does not publish the UI. Do not place admin endpoints on the existing Pneuma diagnostic hostname, whose browser policy permits `all`.
 
 ## Browser Auth Limitations
 
