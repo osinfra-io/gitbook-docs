@@ -133,11 +133,57 @@ mesh_enabled = true
 
 Use the [Nomos Agent](/onboarding) to create or update the Logos declaration. Nomos validates the policy before opening the change.
 
+## Google SAML for Agentgateway Administrators
+
+The Authentik configuration module supports optional, application-specific administrator access through Google Workspace SAML and the Enterprise Source stage. This is an inbound identity integration: Google remains authoritative for administrator group membership. Do not use Authentik's Google Workspace provisioning provider for this purpose; that provider writes users and groups from Authentik to Google, conflicting with Logos ownership.
+
+Google OAuth remains available for ordinary platform applications. It does not supply Google group claims and cannot, by itself, grant administrator access.
+
+### Google Admin setup
+
+Create a custom SAML application under **Apps > Web and mobile apps** in the Google Admin console. Because the platform has a separate Authentik instance per environment, each environment requires its own application destination:
+
+| Environment | ACS URL | Google administrator group |
+|---|---|---|
+| Sandbox | `https://authentik.sb.osinfra.io/source/saml/agentgateway-admins/acs/` | `pt-pneuma-sandbox-administrators@osinfra.io` |
+| Non-production | `https://authentik.nonprod.osinfra.io/source/saml/agentgateway-admins/acs/` | `pt-pneuma-non-production-administrators@osinfra.io` |
+| Production | `https://authentik.osinfra.io/source/saml/agentgateway-admins/acs/` | `pt-pneuma-production-administrators@osinfra.io` |
+
+For each application's Entity ID, replace `/acs/` with `/metadata/` in its ACS URL. Select **Signed response**, use the primary email as NameID, map the primary email to `email`, and map the selected environment's administrator group to `groups`. Enable the app for the intended test and administrator users.
+
+The Google SSO URL and public signing certificate can be shared across apps if Google supplies the same IdP configuration. The ACS, Entity ID, and selected administrator group are environment-specific. OpenTofu manages the Authentik source, public verification certificate, mappings, stages, application, and policies; the standard Google providers do not manage custom Google SAML applications.
+
+Use the exact group identifier observed in a signed assertion when configuring the mapping. Google can send a group's display name rather than its email address. Verify owners and managers are represented as members; Logos already declares Brett as an owner in the three Pneuma administrator groups. Do not add a separate email allowlist.
+
+### Membership and authorization
+
+The optional integration maps only the selected Google group into `agentgateway-admins`. It does not import arbitrary asserted group names or grant Authentik superuser privileges. Source-owned membership is reconciled at SAML sign-in, including removal when the asserted group is absent. Existing baseline `all` membership is preserved.
+
+Application policy evaluation precedes the authorization flow. An authenticated browser is therefore allowed to enter the authorization-code flow before its group membership is known. The Enterprise Source stage then verifies Google identity and refreshes groups; a subsequent deny stage rejects non-members before consent and token issuance. This entry permission is not permission to use the UI. Password, client-credentials, refresh-token, and header-auth paths cannot substitute for the administrator SAML flow.
+
+The public signing certificate must be supplied before enabling the integration, and Enterprise must be activated on the target Authentik instance. The source verifies signed responses and rejects unsolicited IdP-initiated logins. A SAML identity must match the already signed-in Authentik user's email to prevent linking a different Google identity into that session.
+
+### Freshness and emergency revocation
+
+Administrator access has a maximum membership freshness of four hours. The proxy token's absolute expiry is capped at the SAML membership check time plus that interval; delaying consent cannot extend it. Refresh tokens are disabled, so expiry requires a new authorization flow and Google SAML membership check.
+
+This is not continuous Google directory synchronization. Removing a Google membership does not immediately invalidate an existing outpost session. For emergency withdrawal, remove the Google membership and invalidate the user's Authentik sessions and application grants, then verify that every regional outpost rejects the old session. If session revocation cannot be verified promptly, withdraw the admin HTTPRoute until the session bound expires. Do not assume deleting a token alone clears the outpost's cached session.
+
+Real Google browser verification must cover non-members, owners/managers, wrong-environment groups, removal, expiry, and delayed consent. Mocked resource tests do not establish live SAML trust or outpost session behavior.
+
+### Local and cloud publication
+
+The local Authentik fixture requires `agentgateway-admins` for `agentgateway.localhost`; membership in `all` no longer grants access. Supply its optional SAML configuration using a Google app whose ACS is `https://authentik.localhost/source/saml/agentgateway-admins/acs/`. Without that configuration, Google OAuth enrollment does not grant admin membership. The ordinary development diagnostic continues using `all`.
+
+The reusable agentgateway admin routing submodule keeps its Service `ClusterIP` and restricts port `15000` to the Istio ingress identity. It publishes `/ui`, `/api`, and `/config_dump`; all must be protected together. Apply enforcement before publishing backend routes, and remove routes first during teardown.
+
+Cloud publication additionally requires Pneuma deployment/workflow integration and dedicated DNS/TLS hosts. Creating the SAML source alone does not deploy or publish agentgateway. Do not place its admin endpoints on the existing Pneuma diagnostic hostname, whose browser policy permits `all`.
+
 ## Browser Auth Limitations
 
 :::caution Group membership is not synchronized
 
-Pneuma creates the Authentik applications, providers, groups, and policy bindings required for browser enforcement. User membership is not yet synchronized from Google Identity or Logos. Users must be assigned to the required Authentik group. This gap is tracked in [pt-pneuma#181](https://github.com/osinfra-io/pt-pneuma/issues/181).
+Pneuma creates the Authentik applications, providers, groups, and policy bindings required for browser enforcement. Ordinary browser-route membership is not automatically synchronized from Google Identity or Logos. The optional agentgateway administrator SAML integration is application-specific and does not close this gap for every route group. Other users must be assigned to the required Authentik group. This gap is tracked in [pt-pneuma#181](https://github.com/osinfra-io/pt-pneuma/issues/181).
 
 :::
 
