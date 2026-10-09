@@ -147,11 +147,13 @@ The checked-out local fixtures consume Pneuma's actual Logos declaration and sel
 
 This local integration is not a cloud rollout. Real Google browser sign-in, independent-path allow/deny checks, and removal with an existing session must pass before releasing modules or relaxing the cloud host-scoping restriction. After rollout, membership changes require Logos deployment followed by the relevant manually dispatched Pneuma reconciliation workflows; merging a declaration alone does not change live access.
 
-The proposed cloud gateway adapter selects application memberships from `module.core_helpers.teams` using the current long environment name and passes them to the same shared renderer. It creates a cluster-owned post-auth guard only when a browser route requires a managed group; existing browser and API JWT routes retain their current behavior. This adapter does not itself expose the agentgateway UI or update the Authentik module pin.
+The proposed cloud gateway adapter selects application memberships from `module.core_helpers.teams` using the current long environment name and passes them to the same shared renderer. It creates a cluster-owned post-auth guard only when a browser route requires a managed group; existing browser and API JWT routes retain their current behavior. This adapter does not itself expose the agentgateway UI.
 
-:::caution Group membership is not synchronized
+For temporary branch testing, the Pneuma feature branch pins Authentik and Istio to immutable, unreleased feature-branch commits. The Authentik consumer passes environment-selected application groups through the same team-access adapter. These test pins must be replaced by released post-merge SHAs before promotion; they do not establish a cloud deployment or activate UI routes.
 
-Pneuma's currently pinned consumer configuration creates the Authentik applications, providers, groups, and policy bindings required for browser enforcement, but does not yet pass the new Logos application-group contract to a released module. Users must still be assigned to the required Authentik group until that consumer rollout is complete. This gap is tracked in [pt-pneuma#181](https://github.com/osinfra-io/pt-pneuma/issues/181).
+:::caution Released consumer rollout remains pending
+
+The released Pneuma consumer does not yet synchronize the new Logos application-group contract. The feature-branch test configuration wires this contract to an unreleased Authentik commit, but merging a declaration alone does not deploy it. Existing unmanaged groups still require direct membership assignment until migrated. This rollout is tracked in [pt-pneuma#181](https://github.com/osinfra-io/pt-pneuma/issues/181).
 
 :::
 
