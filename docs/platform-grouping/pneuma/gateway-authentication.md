@@ -147,6 +147,8 @@ The checked-out local fixtures consume Pneuma's actual Logos declaration and sel
 
 This local integration is not a cloud rollout. Real Google browser sign-in, independent-path allow/deny checks, and removal with an existing session must pass before releasing modules or relaxing the cloud host-scoping restriction. After rollout, membership changes require Logos deployment followed by the relevant manually dispatched Pneuma reconciliation workflows; merging a declaration alone does not change live access.
 
+The proposed cloud gateway adapter selects application memberships from `module.core_helpers.teams` using the current long environment name and passes them to the same shared renderer. It creates a cluster-owned post-auth guard only when a browser route requires a managed group; existing browser and API JWT routes retain their current behavior. This adapter does not itself expose the agentgateway UI or update the Authentik module pin.
+
 :::caution Group membership is not synchronized
 
 Pneuma's currently pinned consumer configuration creates the Authentik applications, providers, groups, and policy bindings required for browser enforcement, but does not yet pass the new Logos application-group contract to a released module. Users must still be assigned to the required Authentik group until that consumer rollout is complete. This gap is tracked in [pt-pneuma#181](https://github.com/osinfra-io/pt-pneuma/issues/181).
