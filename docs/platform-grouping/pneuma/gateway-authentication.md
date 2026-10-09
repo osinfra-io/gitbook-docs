@@ -60,7 +60,7 @@ flowchart TD
 
 ## Request Flow
 
-1. Cloud Armor evaluates edge security policy.
+1. Cloud Armor evaluates edge security policy. Authentik's `/api/v3/` paths on its exact environment hostname permit `DELETE`, `PATCH`, and `PUT` through the method-enforcement check so browser administration works. Other WAF checks remain active, and Authentik still enforces authentication, permissions, and CSRF protection.
 2. TLS terminates at the shared gateway.
 3. The route's auth mode determines enforcement:
    - `browser` sends the request to the Authentik embedded outpost, which validates the browser session and returns trusted `x-authentik-*` identity headers for the upstream request.
