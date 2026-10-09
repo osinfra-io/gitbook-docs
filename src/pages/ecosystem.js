@@ -1,161 +1,147 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './ecosystem.module.css';
 
 const categories = [
   {
-    id: 'cloud',
-    label: 'Cloud',
+    id: 'foundation',
+    label: 'Foundation & Runtime',
+    description: 'Where platform infrastructure and workloads run.',
     tools: [
       {
         name: 'Google Cloud Platform',
         logo: '/img/google-cloud.svg',
-        description: 'The cloud provider powering all platform infrastructure — GCP projects, networking, IAM, KMS, and billing.',
+        description: 'Cloud infrastructure for projects, networking, identity, encryption, and billing.',
         href: 'https://cloud.google.com',
       },
-    ],
-  },
-  {
-    id: 'iac',
-    label: 'Infrastructure as Code',
-    tools: [
-      {
-        name: 'OpenTofu',
-        logo: '/img/opentofu.png',
-        description: 'The open-source IaC engine used across every layer of the platform — from GCP projects to Kubernetes manifests.',
-        href: 'https://opentofu.org',
-        cncf: true,
-      },
-    ],
-  },
-  {
-    id: 'kubernetes',
-    label: 'Kubernetes',
-    tools: [
       {
         name: 'Google Kubernetes Engine',
         logo: '/img/gke.svg',
-        description: 'Managed Kubernetes clusters across multiple zones and regions with Workload Identity, KMS encryption, and GKE Fleet.',
+        description: 'Managed Kubernetes runtime across zones and regions with workload identity and fleet management.',
         href: 'https://cloud.google.com/kubernetes-engine',
       },
       {
-        name: 'Helm',
-        logo: '/img/helm.svg',
-        description: 'Package manager for Kubernetes used to deploy Istio, cert-manager, and other cluster add-ons.',
-        href: 'https://helm.sh',
-        cncf: true,
+        name: 'Docker',
+        logo: '/img/docker.png',
+        description: 'Container packaging and consistent local development environments.',
+        href: 'https://www.docker.com',
       },
+    ],
+  },
+  {
+    id: 'traffic',
+    label: 'Traffic & Trust',
+    description: 'How requests reach applications and establish trusted connections.',
+    tools: [
       {
         name: 'Istio',
         logo: '/img/istio.png',
-        description: 'Service mesh providing mTLS, traffic management, locality-based load balancing, and Cloud Armor WAF integration.',
+        description: 'Service mesh for encrypted workload traffic, gateway routing, and locality-aware load balancing.',
         href: 'https://istio.io',
         cncf: true,
       },
       {
         name: 'agentgateway',
         logo: '/img/agentgateway.svg',
-        description: 'AI-native data plane for MCP, agent-to-agent, and LLM traffic, integrated with the platform gateway and ambient service mesh.',
+        description: 'AI-native data plane for MCP, agent-to-agent, and LLM traffic.',
         href: 'https://agentgateway.dev',
         lf: true,
       },
       {
+        name: 'Authentik',
+        logo: '/img/authentik.svg',
+        description: 'Identity provider for OIDC and authenticated browser access at the gateway.',
+        href: 'https://goauthentik.io',
+      },
+      {
         name: 'cert-manager',
         logo: '/img/cert-manager.png',
-        description: 'Automates TLS certificate lifecycle management on GKE — no manual renewal, no expiry surprises.',
+        description: 'Automated TLS certificate issuance and renewal for Kubernetes workloads.',
         href: 'https://cert-manager.io',
         cncf: true,
       },
-      {
-        name: 'OPA Gatekeeper',
-        logo: '/img/opa.png',
-        description: 'Enforces admission policies cluster-wide using Open Policy Agent — preventing non-compliant resources from being deployed.',
-        href: 'https://open-policy-agent.github.io/gatekeeper',
-        cncf: true,
-      },
     ],
   },
   {
-    id: 'identity',
-    label: 'Identity & Access',
+    id: 'operations',
+    label: 'Security & Operations',
+    description: 'How the platform protects resources and keeps workloads healthy.',
     tools: [
-      {
-        name: 'Authentik',
-        logo: '/img/authentik.svg',
-        description: 'Open-source identity provider — platform-wide OIDC issuer and forward-auth for browser sessions at the gateway.',
-        href: 'https://goauthentik.io',
-      },
-    ],
-  },
-  {
-    id: 'observability',
-    label: 'Observability & Security',
-    tools: [
-      {
-        name: 'Datadog',
-        logo: '/img/datadog.png',
-        description: 'Unified observability — logs, metrics, APM, synthetic monitoring, CSPM, application security, and cloud cost management.',
-        href: 'https://datadoghq.com',
-      },
       {
         name: 'OpenBao',
         logo: '/img/openbao.svg',
-        description: 'Open-source secrets management platform — dynamic credentials, PKI certificate issuance, and short-lived secrets for all teams.',
+        description: 'Secrets management, dynamic credentials, and PKI certificate issuance.',
         href: 'https://openbao.org',
         lf: true,
       },
       {
+        name: 'OPA Gatekeeper',
+        logo: '/img/opa.png',
+        description: 'Kubernetes admission policies that prevent non-compliant resources from being deployed.',
+        href: 'https://open-policy-agent.github.io/gatekeeper',
+        cncf: true,
+      },
+      {
+        name: 'Datadog',
+        logo: '/img/datadog.png',
+        description: 'Observability, security monitoring, and cloud cost management.',
+        href: 'https://datadoghq.com',
+      },
+      {
         name: 'Nuclei',
         logo: '/img/nuclei.svg',
-        description: 'Fast, template-based vulnerability scanner used for scheduled security scanning of platform endpoints and APIs.',
+        description: 'Template-based vulnerability scanning of platform endpoints and APIs.',
         href: 'https://projectdiscovery.io/nuclei',
       },
     ],
   },
   {
-    id: 'cicd',
-    label: 'CI/CD',
+    id: 'delivery',
+    label: 'Delivery & Developer Experience',
+    description: 'How teams build, validate, and deliver platform changes.',
     tools: [
+      {
+        name: 'OpenTofu',
+        logo: '/img/opentofu.png',
+        description: 'Infrastructure as code across cloud resources and Kubernetes configuration.',
+        href: 'https://opentofu.org',
+        cncf: true,
+      },
+      {
+        name: 'Helm',
+        logo: '/img/helm.svg',
+        description: 'Kubernetes package management for platform components and cluster add-ons.',
+        href: 'https://helm.sh',
+        cncf: true,
+      },
       {
         name: 'GitHub Actions',
         logo: '/img/githubactions.png',
-        description: 'Platform repositories use shared called workflows for consistent, auditable OpenTofu deployments with OIDC authentication.',
+        description: 'Shared workflows for consistent, auditable deployments using OIDC authentication.',
         href: 'https://github.com/features/actions',
       },
       {
         name: 'Dependabot',
         logo: '/img/dependabot.png',
-        description: 'Automated dependency updates across all repositories — keeping modules, providers, and Actions pinned to current versions.',
+        description: 'Automated updates for pinned dependencies across platform repositories.',
         href: 'https://docs.github.com/en/code-security/dependabot',
       },
-    ],
-  },
-  {
-    id: 'tooling',
-    label: 'Developer Tooling',
-    tools: [
       {
         name: 'pre-commit',
         logo: '/img/pre-commit.svg',
-        description: 'Enforces formatting, validation, documentation generation, and security checks before every commit.',
+        description: 'Formatting, validation, documentation, and security checks before commits.',
         href: 'https://pre-commit.com',
-      },
-      {
-        name: 'Docker',
-        logo: '/img/docker.png',
-        description: 'Used to containerize platform applications and build standardized development environments. Container images are pushed to Google Artifact Registry.',
-        href: 'https://www.docker.com',
       },
       {
         name: 'GitHub Copilot',
         logo: '/img/githubcopilot-white.svg',
-        description: 'AI-assisted development across the platform — team-level agents automate module scaffolding, repo creation, and PR workflows.',
+        description: 'AI-assisted development and team-level agents for platform workflows.',
         href: 'https://github.com/features/copilot',
       },
       {
         name: 'Docusaurus',
         logo: '/img/docusaurus.svg',
-        description: 'Powers the platform documentation site — open-source, React-based, and deployed via GitHub Pages.',
+        description: 'Platform documentation published through GitHub Pages.',
         href: 'https://docusaurus.io',
       },
     ],
@@ -183,44 +169,21 @@ function ToolCard({ name, logo, description, href, cncf, lf }) {
 }
 
 export default function Ecosystem() {
-  const [active, setActive] = useState('all');
-
-  const filtered = active === 'all'
-    ? categories
-    : categories.filter((c) => c.id === active);
-
   return (
     <Layout title="Ecosystem" description="The tools and infrastructure that power the osinfra.io platform.">
       <main className={styles.page}>
         <div className={styles.header}>
           <h1 className={styles.title}>Ecosystem</h1>
           <p className={styles.subtitle}>
-            The open-source tools and infrastructure that power the platform.
+            The tools and infrastructure behind the platform, organized by the capabilities they provide.
           </p>
         </div>
 
-        <div className={styles.filters}>
-          <button
-            className={`${styles.filter} ${active === 'all' ? styles.filterActive : ''}`}
-            onClick={() => setActive('all')}
-          >
-            All
-          </button>
-          {categories.map((c) => (
-            <button
-              key={c.id}
-              className={`${styles.filter} ${active === c.id ? styles.filterActive : ''}`}
-              onClick={() => setActive(c.id)}
-            >
-              {c.label}
-            </button>
-          ))}
-        </div>
-
         <div className={styles.content}>
-          {filtered.map((category) => (
-            <section key={category.id} className={styles.section}>
-              <h2 className={styles.categoryLabel}>{category.label}</h2>
+          {categories.map((category) => (
+            <section key={category.id} className={styles.section} aria-labelledby={category.id}>
+              <h2 id={category.id} className={styles.categoryLabel}>{category.label}</h2>
+              <p className={styles.categoryDescription}>{category.description}</p>
               <div className={styles.grid}>
                 {category.tools.map((tool) => (
                   <ToolCard key={tool.name} {...tool} />
