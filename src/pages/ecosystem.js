@@ -53,6 +53,13 @@ const categories = [
         cncf: true,
       },
       {
+        name: 'agentgateway',
+        logo: '/img/agentgateway.svg',
+        description: 'AI-native data plane for MCP, agent-to-agent, and LLM traffic, integrated with the platform gateway and ambient service mesh.',
+        href: 'https://agentgateway.dev',
+        lf: true,
+      },
+      {
         name: 'cert-manager',
         logo: '/img/cert-manager.png',
         description: 'Automates TLS certificate lifecycle management on GKE — no manual renewal, no expiry surprises.',

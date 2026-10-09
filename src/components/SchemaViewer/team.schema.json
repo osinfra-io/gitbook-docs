@@ -15,6 +15,39 @@
     "team_type"
   ],
   "properties": {
+    "authentik_groups": {
+      "description": "Team-owned Authentik application-access groups, keyed by stable RFC 1123 identifiers. Names are derived as <team-key>: <label>, for example pt-pneuma: agentgateway Admins. These groups never grant Authentik administrative privileges. Membership is explicit per environment and does not inherit team membership.",
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["description", "label"],
+        "properties": {
+          "description": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "label": {
+            "description": "Human-readable application and role label, for example agentgateway Admins. Preserve application branding; labels must be unique within the owning team.",
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9]*( [A-Za-z0-9]+)*$"
+          },
+          "members": {
+            "description": "Explicit member emails per environment. Omitted environments have no members. Google OAuth remains the sign-in mechanism.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "non-production": {"$ref": "#/$defs/authentikMemberList"},
+              "production": {"$ref": "#/$defs/authentikMemberList"},
+              "sandbox": {"$ref": "#/$defs/authentikMemberList"}
+            }
+          }
+        }
+      }
+    },
     "team_key": {
       "description": "Team key. Must match the team_type prefix scheme: pt- (platform), st- (stream-aligned), ct- (complicated-subsystem), et- (enabling).",
       "type": "string",
@@ -85,7 +118,7 @@
       }
     },
     "google_basic_groups_env_memberships": {
-      "description": "Per-environment Google Cloud Identity basic groups: admin, reader, writer. Binds each role directly to environment folders — no team-folder binding, no inheritance. Allows finer-grained access control than team-level groups (e.g. write in sandbox/non-production, read-only in production).",
+      "description": "Per-environment Google Cloud Identity basic groups: admin, reader, writer. Binds each role directly to environment folders \u2014 no team-folder binding, no inheritance. Allows finer-grained access control than team-level groups (e.g. write in sandbox/non-production, read-only in production).",
       "type": "object",
       "additionalProperties": false,
       "required": [
@@ -241,6 +274,15 @@
     }
   ],
   "$defs": {
+    "authentikMemberList": {
+      "description": "Unique lowercase Google identity email addresses explicitly granted application access.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(\\.[a-z0-9-]+)+$"
+      }
+    },
     "emailList": {
       "description": "List of email addresses.",
       "type": "array",
@@ -633,7 +675,7 @@
           "default": false
         },
         "route_auth_policies": {
-          "description": "Gateway auth policy intent for namespace routes, keyed by an existing route name. Pneuma renders each entry as gateway authentication and authorization policy for the matching route. Policies may only be declared on mesh-enabled namespaces (mesh_enabled = true).",
+          "description": "Gateway auth policy intent for namespace routes, keyed by an existing route name. Pneuma renders each entry as gateway authentication and authorization policy for the matching route. Policies may only be declared on mesh-enabled namespaces (mesh_enabled = true). Because browser routes for a team share one host-scoped Authentik application, every browser policy across the team's namespaces must declare identical required_groups and required_roles.",
           "type": "object",
           "propertyNames": {
             "pattern": "^[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?$"
@@ -718,25 +760,25 @@
           }
         },
         "required_groups": {
-          "description": "Identity groups allowed to access the route. Values must be non-empty and must not contain whitespace.",
+          "description": "Identity groups allowed to access the route. Names may contain single internal spaces, for example pt-pneuma: agentgateway Admins, but must not contain leading/trailing whitespace, control characters, comma or pipe delimiters.",
           "type": "array",
           "uniqueItems": true,
           "default": [],
           "items": {
             "type": "string",
             "minLength": 1,
-            "pattern": "^\\S+$"
+            "pattern": "^[!-+\\--{}~]+( [!-+\\--{}~]+)*$"
           }
         },
         "required_roles": {
-          "description": "Application roles allowed to access the route. Values must be non-empty and must not contain whitespace.",
+          "description": "Application roles allowed to access the route. Names may contain single internal spaces but must not contain leading/trailing whitespace, control characters, comma or pipe delimiters.",
           "type": "array",
           "uniqueItems": true,
           "default": [],
           "items": {
             "type": "string",
             "minLength": 1,
-            "pattern": "^\\S+$"
+            "pattern": "^[!-+\\--{}~]+( [!-+\\--{}~]+)*$"
           }
         }
       }

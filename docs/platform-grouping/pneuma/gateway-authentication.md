@@ -135,9 +135,21 @@ Use the [Nomos Agent](/onboarding) to create or update the Logos declaration. No
 
 ## Browser Auth Limitations
 
+### Team-owned group contract
+
+Logos supports explicit per-environment application-access declarations through [`authentik_groups`](../logos/team-topology.md#authentik-application-access-declarations). Group names include the owning Team Topologies key and preserve application branding, for example `pt-pneuma: agentgateway Admins`. These names contain spaces; group matching must compare whole names, not space-separated words.
+
+The reusable Authentik configuration accepts resolved application groups. Its Google source mapping assigns membership from a verified OAuth email during enrollment and sign-in, while configuration deployment reconciles already-verified Google users. Declared identities that have not completed verified enrollment are reported as pending; no accounts or passwords are pre-provisioned. Application groups are non-superuser groups and do not inherit ordinary team membership.
+
+Consumer deployment and request-level authorization remain separate rollout requirements. Do not infer same-host path isolation or existing-session revocation from group synchronization alone. Until those are verified, retain the restrictions below and do not activate differently authorized browser paths on one host.
+
+The checked-out local fixtures consume Pneuma's actual Logos declaration and select its sandbox member list. Their shared gateway renderer strips inbound identity headers, authenticates with `ext_authz`, and then enforces managed requirements against the current declared emails. The Authentik proxy mapping supplies a dedicated Google-established identity header; an ordinary email header or cached application-group claim cannot grant managed access. The guard protects the UI and its supporting admin paths without adding implicit public health exceptions.
+
+This local integration is not a cloud rollout. Real Google browser sign-in, independent-path allow/deny checks, and removal with an existing session must pass before releasing modules or relaxing the cloud host-scoping restriction. After rollout, membership changes require Logos deployment followed by the relevant manually dispatched Pneuma reconciliation workflows; merging a declaration alone does not change live access.
+
 :::caution Group membership is not synchronized
 
-Pneuma creates the Authentik applications, providers, groups, and policy bindings required for browser enforcement. User membership is not yet synchronized from Google Identity or Logos. Users must be assigned to the required Authentik group. This gap is tracked in [pt-pneuma#181](https://github.com/osinfra-io/pt-pneuma/issues/181).
+Pneuma's currently pinned consumer configuration creates the Authentik applications, providers, groups, and policy bindings required for browser enforcement, but does not yet pass the new Logos application-group contract to a released module. Users must still be assigned to the required Authentik group until that consumer rollout is complete. This gap is tracked in [pt-pneuma#181](https://github.com/osinfra-io/pt-pneuma/issues/181).
 
 :::
 
