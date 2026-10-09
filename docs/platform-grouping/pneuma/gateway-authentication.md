@@ -151,6 +151,8 @@ The proposed cloud gateway adapter selects application memberships from `module.
 
 For temporary branch testing, the Pneuma feature branch pins Authentik and Istio to immutable, unreleased feature-branch commits. The Authentik consumer passes environment-selected application groups through the same team-access adapter. These test pins must be replaced by released post-merge SHAs before promotion; they do not establish a cloud deployment or activate UI routes.
 
+Sandbox agentgateway deployment uses separate zonal runtime and manifest workspaces. Runtime runs after Istio and installs the controller and CRDs; manifests run afterward so the Kubernetes provider can discover the CRD schema at plan time. Both stages target only Pneuma-owned sandbox clusters and reuse the existing zonal Sandbox Istio approval environments. No admin Service or external admin route is created by these stages; protected UI exposure remains a separate rollout step.
+
 :::caution Released consumer rollout remains pending
 
 The released Pneuma consumer does not yet synchronize the new Logos application-group contract. The feature-branch test configuration wires this contract to an unreleased Authentik commit, but merging a declaration alone does not deploy it. Existing unmanaged groups still require direct membership assignment until migrated. This rollout is tracked in [pt-pneuma#181](https://github.com/osinfra-io/pt-pneuma/issues/181).
