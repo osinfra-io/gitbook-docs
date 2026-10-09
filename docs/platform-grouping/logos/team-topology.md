@@ -72,6 +72,8 @@ The cloud consumer still rejects different browser group requirements on the sam
 
 The declaration and reusable membership module do not by themselves enable new application routes. A consumer must use a released module implementing the contract. After Logos deployment, reconcile the selected environment through Pneuma's existing manually dispatched workflow and environment approvals; a merged Logos PR is not evidence that access has changed.
 
+The proposed Logos workflow adds a `pneuma_only` boolean for manual dispatch, defaulting to false. Selecting it reconciles only `pt-pneuma` through its existing production approval gate; pushes and ordinary dispatches retain the full team matrix. This is a production foundational-state operation even when the downstream test targets sandbox, and must be reviewed and approved accordingly.
+
 The current [browser policy limitations](../pneuma/gateway-authentication.md#browser-auth-limitations) remain in force until request-level isolation and existing-session revocation are implemented and verified.
 
 :::
