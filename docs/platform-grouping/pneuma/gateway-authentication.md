@@ -173,7 +173,7 @@ Real Google browser verification must cover non-members, owners/managers, wrong-
 
 ### Local and cloud publication
 
-The local Authentik fixture requires `agentgateway-admins` for `agentgateway.localhost`; membership in `all` no longer grants access. Supply its optional SAML configuration using a Google app whose ACS is `https://authentik.localhost/source/saml/agentgateway-admins/acs/`. Without that configuration, Google OAuth enrollment does not grant admin membership. The ordinary development diagnostic continues using `all`.
+The local Authentik fixture requires `agentgateway-admins` for `agentgateway.localhost`; membership in `all` no longer grants access. Google OAuth enrollment does not grant admin membership. Enterprise SAML administrator access is tested only in licensed sandbox, not the local fixture. Other environments must remain disabled until licensed for their own Install IDs. The ordinary development diagnostic continues using `all`.
 
 The reusable agentgateway admin routing submodule keeps its Service `ClusterIP` and restricts port `15000` to the Istio ingress identity. It publishes `/ui`, `/api`, and `/config_dump`; all must be protected together. Apply enforcement before publishing backend routes, and remove routes first during teardown.
 
