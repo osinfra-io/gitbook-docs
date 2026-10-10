@@ -32,6 +32,8 @@ This page includes [Architecture Decision Records](#architecture-decision-record
 | `fleet` | GKE Fleet registration for multi-cluster service discovery and ingress |
 | `workload-identity` | Kubernetes-to-GCP service account mapping — pods authenticate to GCP without keys |
 
+The zonal Authentik and agentgateway workspaces look up only their selected Pneuma cluster and use a single provider connection per zone. Other teams' clusters are not prerequisites for those workspaces; shared add-ons retain multi-cluster deployment.
+
 ## Sandbox Teardown
 
 The manually dispatched `Sandbox Destroy` workflow tears down all team clusters in both sandbox zones, including `pt-pneuma-us-east1-b`; it is not a selective cluster pause. It refreshes main state without applying infrastructure changes, then removes agentgateway parameters before its runtime and Authentik configuration before its routes and server releases. Diagnostics are removed before Istio manifests, manifests before their controllers, and all workloads before onboarding namespaces and GKE clusters.
