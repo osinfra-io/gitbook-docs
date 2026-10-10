@@ -112,6 +112,7 @@ const techLogosOss = [
   { src: '/img/opentofu.png', alt: 'OpenTofu' },
   { src: '/img/helm-white.svg', alt: 'Helm' },
   { src: '/img/istio.png', alt: 'Istio' },
+  { src: '/img/agentgateway.svg', alt: 'agentgateway' },
   { src: '/img/authentik.svg', alt: 'Authentik' },
   { src: '/img/cert-manager-white.svg', alt: 'cert-manager' },
   { src: '/img/opa.png', alt: 'OPA Gatekeeper' },
